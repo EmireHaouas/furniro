@@ -12,6 +12,7 @@ import muggo from '../assets/imgs/muggo.png';
 import lolito from '../assets/imgs/lolito.png';
 import leviosa from '../assets/imgs/leviosa.png';
 import grifo from '../assets/imgs/grifo.png';
+import share_Img from '../assets/imgs/share_Img.png';
 
 const Main = () =>{
     return(
@@ -104,6 +105,11 @@ const Main = () =>{
                 </div>
             </div>
             <button className="show_More">Show More</button>
+        </section>
+        <section className="share">
+            <h2 className="h2_Share">Share your setup with</h2>
+            <h3 className="h3_Share">#FurniroFurniture</h3>
+            <img className="share_img" alt="img of furniture" src={share_Img}/>
         </section>
         </main>
         

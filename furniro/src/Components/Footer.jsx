@@ -24,7 +24,12 @@ const Footer=() => {
             </div>
             <div className="columns3">
                 <p className="title_Footer">Newsletter</p>
-                <p>hdezd</p>
+                
+                <div className="news">
+                <input type="email" className="news_Footer" placeholder="Enter Your Email Adress" required/>
+                <button className="news_Submit">SUBSCRIBE</button>
+                </div>
+
             </div>
             </div>
             <div className="credit_Section">

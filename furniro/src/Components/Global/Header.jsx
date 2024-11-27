@@ -1,10 +1,10 @@
 import React from "react";
-import '../Header.css';
-import logo from "../assets/imgs/logo.png";
-import user_Icon from'../assets/imgs/user_Icon.png';
-import cart_Icon from'../assets/imgs/cart_Icon.png';
-import heart_Icon from'../assets/imgs/heart_Icon.png';
-import search_Icon from'../assets/imgs/search_Icon.png';
+import './Header.css';
+import logo from "../../assets/imgs/logo.png";
+import user_Icon from'../../assets/imgs/user_Icon.png';
+import cart_Icon from'../../assets/imgs/cart_Icon.png';
+import heart_Icon from'../../assets/imgs/heart_Icon.png';
+import search_Icon from'../../assets/imgs/search_Icon.png';
 
 
 

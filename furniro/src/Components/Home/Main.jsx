@@ -1,19 +1,19 @@
 import React from "react";
-import '../Main.css';
+import './Main.css';
 import { useInView } from 'react-intersection-observer';
-import background_banner from '../assets/imgs/background_banner.png';
-import bedroom from '../assets/imgs/bedroom.png';
-import dining from '../assets/imgs/dining.png';
-import living from '../assets/imgs/living.png';
-import syltherine from '../assets/imgs/syltherine.png';
-import respira from '../assets/imgs/respira.png';
-import potty from '../assets/imgs/potty.png';
-import pingky from '../assets/imgs/pingky.png';
-import muggo from '../assets/imgs/muggo.png';
-import lolito from '../assets/imgs/lolito.png';
-import leviosa from '../assets/imgs/leviosa.png';
-import grifo from '../assets/imgs/grifo.png';
-import share_Img from '../assets/imgs/share_Img.png';
+import background_banner from '../../assets/imgs/background_banner.png';
+import bedroom from '../../assets/imgs/bedroom.png';
+import dining from '../../assets/imgs/dining.png';
+import living from '../../assets/imgs/living.png';
+import syltherine from '../../assets/imgs/syltherine.png';
+import respira from '../../assets/imgs/respira.png';
+import potty from '../../assets/imgs/potty.png';
+import pingky from '../../assets/imgs/pingky.png';
+import muggo from '../../assets/imgs/muggo.png';
+import lolito from '../../assets/imgs/lolito.png';
+import leviosa from '../../assets/imgs/leviosa.png';
+import grifo from '../../assets/imgs/grifo.png';
+import share_Img from '../../assets/imgs/share_Img.png';
 
 const Main = () => {
     // NeonElement component definition

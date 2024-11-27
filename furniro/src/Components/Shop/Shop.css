@@ -1,0 +1,23 @@
+.bannerimg_Shop{
+    width: 100%;
+}
+.product_Page{
+    display: flex;
+    flex-direction: column;
+}
+.row1_Shop{
+    display: flex;
+    flex-direction: row;
+}
+.row2_Shop{
+    display: flex;
+    flex-direction: row;
+}
+.row3_Shop{
+    display: flex;
+    flex-direction: row;
+}
+.row4_Shop{
+    display: flex;
+    flex-direction: row;
+}

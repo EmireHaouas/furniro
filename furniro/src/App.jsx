@@ -2,17 +2,18 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
-import Header from './Components/Header';
-import Main from './Components/Main';
-import Footer from './Components/Footer';
-import Home from './Components/Home';
+import Header from './Components/Global/Header';
+import Main from './Components/Home/Main';
+import Footer from './Components/Global/Footer';
+import Home from './Components/Home/Home';
+import Shop from './Components/Shop/Shop';
 
 const App=() => {
 
 
   return (
     <div>
-    <Home />
+    <Shop />
     </div>
     
   )

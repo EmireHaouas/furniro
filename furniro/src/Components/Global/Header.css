@@ -47,7 +47,8 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 400px;
+    margin-right: 350px;
+    margin-left: 50px
 }
 .home_Nav{
     margin-right: 40px;

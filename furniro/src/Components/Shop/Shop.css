@@ -4,20 +4,101 @@
 .product_Page{
     display: flex;
     flex-direction: column;
+    margin-top: 80px;
 }
 .row1_Shop{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 .row2_Shop{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 .row3_Shop{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 .row4_Shop{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+}
+.imgproduct_01{
+    background-image: url('../../assets/imgs/syltherine.png');
+    background-size: cover;
+    background-position: center;
+    width: 285px;
+    height: 301px;
+
+}
+.imgproduct_02{
+    background-image: url('../../assets/imgs/leviosa.png');
+    background-size: cover;
+    background-position: center;
+    width: 285px;
+    height: 301px;
+}
+.imgproduct_03{
+    background-image: url('../../assets/imgs/lolito.png');
+    background-size: cover;
+    background-position: center;
+    width: 285px;
+    height: 301px;
+}
+.imgproduct_04{
+    background-image: url('../../assets/imgs/respira.png');
+    background-size: cover;
+    background-position: center;
+    width: 285px;
+    height: 301px;
+}
+.cart_Product1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.cart_Product2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.cart_Product3{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.cart_Product4{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.details_Product1, .details_Product2, .details_Product3, .details_Product4{
+    background-color: #F4F5F7;
+    display: flex;
+    flex-direction: column;
+}
+.product1_Name, .product2_Name, .product3_Name, .product4_Name{
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #3A3A3A;
+    margin-left: 15px;
+}
+.product1_Description, .product2_Description, .product3_Description, .product4_Description{
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #898989;
+    margin-left: 15px;
+}
+.product1_Price, .product2_Price, .product3_Price, .product4_Price{
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #3A3A3A;
+    margin-left: 15px;
 }

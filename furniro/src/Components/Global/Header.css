@@ -52,17 +52,29 @@ a:hover {
 .home_Nav{
     margin-right: 40px;
     font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
 }
 .shop_Nav{
     margin-right: 40px;
     font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
 }
 .about_Nav{
     margin-right: 40px;
     font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
 }
 .contact_Nav{
     font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
 }
 .logo_Name{
     font-family: 'Montserrat', sans-serif;

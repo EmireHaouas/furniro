@@ -18,6 +18,7 @@ body{
     width: 100%;
     background-color: #ffffff;
     margin-top: 10px;
+    
 }
 .nav_Bar{
     display: flex;
@@ -30,11 +31,13 @@ body{
     width: 28px;
     height: 28px;
     margin-right: 20px;
+    cursor: pointer;
 }
 .icons_Nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-right: 50px;
 }
 a{
     text-decoration: none;
@@ -90,6 +93,9 @@ a:hover {
 }
 .about_Icon{
     margin-right: 20px;
+}
+.cart-icon-img{
+    margin-top: 30px;
 }
 @media (max-width: 480px){
     .logo{

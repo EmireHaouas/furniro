@@ -2,6 +2,7 @@ import React from "react";
 import Header from '../Global/Header';
 import './Shop.css';
 import bannershop_Img from '../../assets/imgs/bannershop_Img.png';
+import Footer from '../../Components/Global/Footer';
 
 
 const Shop=() => {
@@ -221,6 +222,9 @@ const Shop=() => {
 
               </div>
             </section>
+            <footer>
+              <Footer />
+            </footer>
         </div>
     )
 };

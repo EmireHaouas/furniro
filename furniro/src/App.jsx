@@ -7,13 +7,13 @@ import Main from './Components/Home/Main';
 import Footer from './Components/Global/Footer';
 import Home from './Components/Home/Home';
 import Shop from './Components/Shop/Shop';
-
+import ShoppingCart  from './Components/Global/ShoppingCart ';
 const App=() => {
 
 
   return (
     <div>
-    <Shop />
+    <Shop  />
     </div>
     
   )

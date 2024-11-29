@@ -1,0 +1,72 @@
+/* Style de l'icône du panier */
+#cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 2000;
+  }
+  
+  /* Barre latérale (panier) */
+  #shopping-cart {
+    position: fixed; /* Fixe la barre latérale pour qu'elle reste visible */
+    top: 0;
+    right: 0;
+    width: 300px; /* Ajustez la largeur de la barre latérale */
+    height: 100%; /* Prend toute la hauteur de l'écran */
+    background-color: #fff; /* Couleur de fond */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre */
+    transform: translateX(100%); /* Cache la barre latérale par défaut */
+    transition: transform 0.3s ease-in-out; /* Animation fluide */
+    z-index: 1000; /* Assure que la barre latérale est au-dessus */
+}
+
+#shopping-cart.active {
+    transform: translateX(0); /* Affiche la barre latérale */
+}
+
+  
+  /* Style du contenu de la barre latérale */
+  #shopping-cart h3 {
+    margin: 0 0 20px;
+  }
+  
+  #shopping-cart ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #shopping-cart .subtotal {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  /* Bouton pour fermer la barre */
+  #shopping-cart .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Overlay pour fermer le panier en cliquant à l'extérieur */
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1400;
+  }
+.cart-icon-image{
+  width: 28px;
+  height: 28px;
+  margin-top: 30px;
+
+}  
+

@@ -5,6 +5,7 @@ import user_Icon from'../../assets/imgs/user_Icon.png';
 import cart_Icon from'../../assets/imgs/cart_Icon.png';
 import heart_Icon from'../../assets/imgs/heart_Icon.png';
 import search_Icon from'../../assets/imgs/search_Icon.png';
+import ShoppingCart from './ShoppingCart ';
 
 
 
@@ -28,7 +29,7 @@ const Header = () =>{
                  <img className="icons" src={user_Icon} alt=""  />
                  <img className="icons" src={search_Icon} alt=""  />
                  <img className="icons" src={heart_Icon} alt=""  />
-                 <img className="icons" src={cart_Icon} alt=""  />
+                 <ShoppingCart />
            </div> 
 
         </header>

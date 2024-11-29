@@ -8,12 +8,12 @@ import Shop from './Components/Shop/Shop';
 const App = () => {
     return (
         <Router>
-            
+            <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/shop" element={<Shop />} />
             </Routes>
-            
+            <Footer />
         </Router>
     );
 };

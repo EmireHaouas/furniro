@@ -8,7 +8,6 @@ import Footer from '../../Components/Global/Footer';
 const Shop=() => {
     return(
         <div>
-            < Header />
             <img className="bannerimg_Shop" alt="banner img" src={bannershop_Img} />
             <section className="product_Page">
 
@@ -223,7 +222,6 @@ const Shop=() => {
               </div>
             </section>
             <footer>
-              <Footer />
             </footer>
         </div>
     )

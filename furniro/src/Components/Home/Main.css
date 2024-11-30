@@ -68,6 +68,9 @@
     width: 381px;
     height: 480px;
 }
+.living_Img:hover{ 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .bedroom{
     display: flex;
     flex-direction: column;
@@ -188,6 +191,7 @@
 .potty_Product:hover {
     transform: translateY(-30px);
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 }
 .living:hover,

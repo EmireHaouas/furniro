@@ -19,3 +19,10 @@ const App = () => {
 };
 
 export default App;
+
+{/* Road Map
+    Ajout du panier dynamique 
+    ajout page produit dynamique 
+    fixer l'icone du panier  
+    
+*/}

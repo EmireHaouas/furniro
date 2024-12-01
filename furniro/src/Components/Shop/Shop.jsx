@@ -1,8 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import './Shop.css';
 import bannershop_Img from '../../assets/imgs/bannershop_Img.png';
 import Warranty from "../Global/Warranty";
 const Shop=() => {
+
+  const navigate = useNavigate();
+
+    const handleProductClick = (id) => {
+        navigate(`/product/${id}`); // Redirige vers la page de détails avec l'ID du produit
+    };
+
     return(
         <div>
             <img className="bannerimg_Shop" alt="banner img" src={bannershop_Img} />
@@ -10,7 +18,8 @@ const Shop=() => {
 
               <div className="row1_Shop">
                 {/*first product*/}
-                    <div className="cart_Product1">
+                    <div className="cart_Product1"
+                    onClick={() => handleProductClick(1)}>
 
                                <div className="imgproduct_01">
 
@@ -27,7 +36,8 @@ const Shop=() => {
 
                     </div>
                     {/*second product*/}
-                    <div className="cart_Product2">
+                    <div className="cart_Product2"
+                    onClick={() => handleProductClick(2)}>
 
                         <div className="imgproduct_02">
                             </div>
@@ -41,7 +51,8 @@ const Shop=() => {
 
                     </div>
                     {/*third product*/}
-                   <div className="cart_Product3">
+                   <div className="cart_Product3"
+                   onClick={() => handleProductClick(3)}>
 
                         <div className="imgproduct_03">
                             </div>
@@ -55,7 +66,8 @@ const Shop=() => {
 
                     </div>
                     {/*last product*/}
-                    <div className="cart_Product4">
+                    <div className="cart_Product4"
+                    onClick={() => handleProductClick(4)}>
 
                         <div className="imgproduct_04">
                             </div>
@@ -74,7 +86,8 @@ const Shop=() => {
 
               <div className="row2_Shop">
                                {/*first product*/}
-                        <div className="cart_Product1">
+                        <div className="cart_Product1"
+                        onClick={() => handleProductClick(1)}>
 
                         <div className="imgproduct_01"></div>
                         
@@ -87,7 +100,8 @@ const Shop=() => {
 
                         </div>
                                   {/*second product*/}
-                         <div className="cart_Product2">
+                         <div className="cart_Product2"
+                         onClick={() => handleProductClick(2)}>
 
                              <div className="imgproduct_02">
                                 </div>
@@ -98,7 +112,8 @@ const Shop=() => {
                             </div>
                         </div>
                                   {/*third product*/}
-                        <div className="cart_Product3">
+                        <div className="cart_Product3"
+                        onClick={() => handleProductClick(3)}>
 
                             <div className="imgproduct_03">
                                 </div>
@@ -109,7 +124,8 @@ const Shop=() => {
                             </div>
                        </div>
                                   {/*last product*/}
-                        <div className="cart_Product4">
+                        <div className="cart_Product4"
+                        onClick={() => handleProductClick(4)}>
 
                             <div className="imgproduct_04">
                                 </div>
@@ -123,7 +139,8 @@ const Shop=() => {
               </div>
               <div className="row3_Shop">
                                  {/*first product*/}
-                        <div className="cart_Product1">
+                        <div className="cart_Product1"
+                        onClick={() => handleProductClick(1)}>
 
                         <div className="imgproduct_01"></div>
                         
@@ -134,7 +151,8 @@ const Shop=() => {
                       </div>
                         </div>
                                   {/*second product*/}
-                        <div className="cart_Product2">
+                        <div className="cart_Product2"
+                        onClick={() => handleProductClick(2)}>
 
                           <div className="imgproduct_02">
                             </div>
@@ -145,7 +163,8 @@ const Shop=() => {
                            </div>
                         </div>
                                    {/*third product*/}
-                         <div className="cart_Product3">
+                         <div className="cart_Product3"
+                         onClick={() => handleProductClick(3)}>
 
                            <div className="imgproduct_03">
                             </div>
@@ -156,7 +175,8 @@ const Shop=() => {
                            </div>
                        </div>
                                    {/*last product*/}
-                         <div className="cart_Product4">
+                         <div className="cart_Product4"
+                         onClick={() => handleProductClick(4)}>
 
                             <div className="imgproduct_04">
                                 </div>
@@ -170,7 +190,8 @@ const Shop=() => {
               </div>
               <div className="row4_Shop">
                                    {/*first product*/}
-                        <div className="cart_Product1">
+                        <div className="cart_Product1"
+                        onClick={() => handleProductClick(1)}>
 
                         <div className="imgproduct_01"></div>
                         
@@ -181,7 +202,8 @@ const Shop=() => {
                       </div>
                         </div>
                                    {/*second product*/}
-                           <div className="cart_Product2">
+                           <div className="cart_Product2"
+                           onClick={() => handleProductClick(2)}>
 
                              <div className="imgproduct_02">
                                 </div>
@@ -193,7 +215,8 @@ const Shop=() => {
 
                          </div>
                                     {/*third product*/}
-                           <div className="cart_Product3">
+                           <div className="cart_Product3"
+                           onClick={() => handleProductClick(3)}>
 
                               <div className="imgproduct_03">
                                 </div>
@@ -204,7 +227,8 @@ const Shop=() => {
                              </div>
                            </div>
                                      {/*last product*/}
-                            <div className="cart_Product4">
+                            <div className="cart_Product4"
+                            onClick={() => handleProductClick(4)}>
 
                                 <div className="imgproduct_04">
                                 </div>

@@ -1,10 +1,7 @@
 import React from "react";
-import Header from '../Global/Header';
 import './Shop.css';
 import bannershop_Img from '../../assets/imgs/bannershop_Img.png';
-import Footer from '../../Components/Global/Footer';
-
-
+import Warranty from "../Global/Warranty";
 const Shop=() => {
     return(
         <div>
@@ -221,8 +218,9 @@ const Shop=() => {
 
               </div>
             </section>
-            <footer>
-            </footer>
+            <Warranty />
+            
+            
         </div>
     )
 };

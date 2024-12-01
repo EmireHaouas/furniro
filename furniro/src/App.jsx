@@ -4,8 +4,9 @@ import Header from './Components/Global/Header';
 import Footer from './Components/Global/Footer';
 import Home from './Components/Home/Home';
 import Shop from './Components/Shop/Shop';
+import Product from './Components/Global/Product';
 
-const App = () => {
+const App=() => {
     return (
         <Router>
             <Header />
@@ -14,6 +15,8 @@ const App = () => {
                 <Route path="/shop" element={<Shop />} />
             </Routes>
             <Footer />
+            <Product />
+
         </Router>
     );
 };

@@ -103,6 +103,9 @@
   width: 16.63px;
   height: 19px;
 }
+.close_icon:active{
+  translate: 10%;
+}
 .title_Hr{
   display: flex;
   flex-direction: column;
@@ -137,6 +140,7 @@ hr{
   padding: 2px 30px 2px 30px;
   cursor: pointer;
 }
+
 .button_Cart{
   display: flex;
   flex-direction: row;

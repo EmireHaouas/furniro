@@ -1,6 +1,6 @@
 .img_Product{
     width: 423px;
-    height: 500px;
+    height: auto;
     margin-left: 150px;
     object-fit: cover;
     border-radius: 10px;
@@ -8,6 +8,8 @@
     padding: 50px 0px 50px 0px;
     background-color: #F9F1E7;
     object-fit: contain;
+    max-height: 550px;
+    
 }
 .detailsproduct_Details{/*ddddddddddddddddd*/
     display: flex;

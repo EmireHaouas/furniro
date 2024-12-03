@@ -1,4 +1,4 @@
-import syltherineImage from "../assets/imgs/syltherine.png";
+import syltherineImage from "../assets/imgs/syltherineB.png";
 import leviosaImage from "../assets/imgs/leviosaB.png";
 import lolitoImage from "../assets/imgs/lolitoB.png";
 import respiraImage from "../assets/imgs/respiraB.png";

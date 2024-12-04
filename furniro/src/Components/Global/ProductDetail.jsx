@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import products from '../../Data/Product'; // Assurez-vous que le fichier exporte 'products'
 import "./ProductDetail.css";
+import Qty from './Qty'
 
 const ProductDetail = () => {
   const { id } = useParams(); // Récupère l'ID depuis les paramètres de l'URL
@@ -19,10 +20,12 @@ const ProductDetail = () => {
          <h1 className="nameproduct_Details">{product.name}</h1>
          <p className="priceproduct_Details"> ${product.price}</p>
          <p className="descriptionproduct_Details" >{product.description}</p>
+         <div className="buttons">
+          <Qty />
            <button className="addtocart_Details" onClick={() => addToCart(product)}>
     Add to Cart
 </button>
-
+      </div>
       </div>
 
     </div>

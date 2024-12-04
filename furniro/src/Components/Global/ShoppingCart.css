@@ -70,9 +70,10 @@
   width: 28px;
   height: 28px;
   margin-top: 30px;
-
-
 }  
+.cart-icon-image:active{
+  transform: scale(1.2);
+}
 .title_Cart{
   font-family: 'poppins', sans-serif;
   font-weight: 600;

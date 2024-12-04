@@ -44,7 +44,8 @@ const ShoppingCart = () => {
                 <hr className="hr2"></hr>
                 <div className="button_Cart">
                 <Link to="/cart" className="cart_Button">Cart</Link>
-                <button className="checkout_Button">Checkout</button>
+                <Link to="/checkout" className="checkout_Button">Checkout</Link>
+               
                 </div>
             </div>
             

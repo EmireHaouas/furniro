@@ -7,6 +7,7 @@ import ProductDetail from './Components/Global/ProductDetail';
 import ShoppingCart from "./Components/Global/ShoppingCart";
 import Cart from './Components/Cart/Cart';
 import Contact from "./Components/Contact/Contact";
+import Checkout from "./Components/Checkout/Checkout";
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/product/:id" element={<ProductDetail />} /> {/* Route dynamique */}
                 <Route path="/cart" element={<Cart />} />
+                <Route path="/checkout" element={<Checkout />} />
                 <Route path="/contact" element={<Contact />} />
 
                 

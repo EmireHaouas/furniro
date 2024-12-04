@@ -1,7 +1,8 @@
 import React, { useState } from "react"; 
-import './Cart.css';
+import './ShoppingCart.css';
 import cart_Icon from'../../assets/imgs/cart_Icon.png';
 import close_Icon from '../../assets/imgs/close_Icon.png';
+import { Link } from 'react-router-dom';
 
 const ShoppingCart = () => {
     const [isCartOpen, setIsCartOpen] = useState(false);
@@ -42,7 +43,7 @@ const ShoppingCart = () => {
                 <div className="subtotal"><span className="sub_Cart">Subtotal: </span>  <span className="price_Cart">$. 520,000.00</span></div>
                 <hr className="hr2"></hr>
                 <div className="button_Cart">
-                <button className="cart_Button">Cart</button>
+                <Link to="/cart" className="cart_Button">Cart</Link>
                 <button className="checkout_Button">Checkout</button>
                 </div>
             </div>

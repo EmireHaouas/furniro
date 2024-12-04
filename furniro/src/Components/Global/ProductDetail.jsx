@@ -19,7 +19,10 @@ const ProductDetail = () => {
          <h1 className="nameproduct_Details">{product.name}</h1>
          <p className="priceproduct_Details"> ${product.price}</p>
          <p className="descriptionproduct_Details" >{product.description}</p>
-         <button className="addtocart_Details">Add To Cart</button>
+           <button className="addtocart_Details" onClick={() => addToCart(product)}>
+    Add to Cart
+</button>
+
       </div>
 
     </div>

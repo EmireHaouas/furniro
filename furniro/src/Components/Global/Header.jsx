@@ -5,7 +5,7 @@ import logo from "../../assets/imgs/logo.png";
 import user_Icon from '../../assets/imgs/user_Icon.png';
 import heart_Icon from '../../assets/imgs/heart_Icon.png';
 import search_Icon from '../../assets/imgs/search_Icon.png';
-import ShoppingCart from './ShoppingCart ';
+import ShoppingCart from './ShoppingCart';
 
 const Header = () => {
     return (

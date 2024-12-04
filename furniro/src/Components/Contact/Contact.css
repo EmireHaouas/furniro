@@ -1,0 +1,144 @@
+.title_Contact{
+    font-family: 'poppins', sans-serif;
+    font-size: 36px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.p_Contact{
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    color: #9F9F9F;
+    font-weight: 400;
+    margin-top: 0;
+}
+.intro_Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.infos_Icon{
+    height: 22px;
+    width: 22px;
+
+}
+.icon_Row{
+    display: flex;
+    flex-direction: row;
+}
+.sub_Infos{
+    display: flex;
+    flex-direction: column;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.p_Infos{
+    font-family: 'poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 0;
+
+}
+.p2_Infos{
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-bottom: 60px;
+
+}
+.infoss{
+    display: flex;
+    flex-direction: column;
+}
+.text_Contact{
+    display: flex;
+    flex-direction: column;
+}
+.map_Contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+.submit_Form{
+    background-color: #B88E2F;
+    color: #FFFFFF;
+    width: 237px;
+    height: 55px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.label_Form{
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.input_Form{
+    width: 528.75px;
+    height: 75px;
+    border-radius: 10px;
+    border-color: #9F9F9F;
+    border-width: 1px;
+    margin-bottom: 30px;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    color: #9F9F9F;
+    font-weight: 400;
+
+}
+.textarea_Form{
+    width: 527px;
+    height: 120px;
+    resize: none;
+    border-radius: 10px;
+    border-color: #9F9F9F;
+    border-width: 1px;
+    margin-bottom: 30px;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    color: #9F9F9F;
+    font-weight: 400;
+}
+.form_Group{
+    display: flex;
+    flex-direction: column;
+}
+.form_Contact{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.input_Form::placeholder{ 
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #9F9F9F;
+}
+.textarea_Form::placeholder{
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #9F9F9F;
+}
+.input_Form:focus, .textarea_Form:focus {
+    outline: none;  /* Enlève la bordure de focus par défaut */
+    border: 2px solid #D9B26B;  /* Exemple : ajoute une bordure verte */
+    box-shadow: 0 0 5px #D9B26B; /* Ajoute une ombre autour de l'élément */
+}
+

@@ -4,6 +4,7 @@ import "./ShoppingCart.css";
 import cart_Icon from "../../assets/imgs/cart_Icon.png";
 import close_Icon from "../../assets/imgs/close_Icon.png";
 import { Link } from "react-router-dom";
+import cartdelete_Icon from "../../assets/imgs/cartdelete_Icon.png";
 
 const ShoppingCart = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -34,23 +35,36 @@ const ShoppingCart = () => {
 
         {/* Liste des articles dans le panier */}
         <ul>
+            
           {cart.map((item) => (
             <li key={item.id}>
-              <div>
-                <h4>{item.name}</h4>
-                <p>Price: ${item.price}</p>
-                <p>Quantity: {item.quantity}</p>
+              
+                {/* Ajouter l'image du produit */}
+                <div className="row_Productcart">
+                <img src={item.image} alt={item.name} className="cartitem_Image" />
+                <div className='nameprice_Cart'>
+                <h4 className='nameproduct_Cart'>{item.name}</h4>
+                <div className='priceqty_Cart'>
+            
+                <p className='qty_Cart'>{item.quantity} <span className='qty_Span'>X</span> </p>
+                <p className='price_Cart'> ${item.price}</p>
+                </div>
+                </div>
+              
+              <img src={cartdelete_Icon} alt="Delete Icon" className="cartdelete_Icon"  onClick={() => removeFromCart(item.id)}></img> 
               </div>
-              <button onClick={() => removeFromCart(item.id)}>Remove</button>
             </li>
           ))}
         </ul>
 
         {cart.length > 0 ? (
           <div>
-            <div className="subtotal">
-              Total: $
-              {cart.reduce((total, item) => total + item.price * item.quantity, 0)}
+            <div className="total_Cart">
+            Subtotal 
+            
+            <span className="total_Amount">
+              ${cart.reduce((total, item) => total + item.price * item.quantity, 0)}
+              </span>
             </div>
             <hr />
             <div className="button_Cart">

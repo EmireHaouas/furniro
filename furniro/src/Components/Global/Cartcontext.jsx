@@ -1,42 +1,79 @@
-import React, { createContext, useState, useContext } from "react";
+// Cartcontext.jsx
+import React, { createContext, useContext, useState, useEffect } from "react";
 
-// Créer le contexte
+// Création du contexte
 const CartContext = createContext();
 
-// Hook pour accéder au contexte
-export const useCart = () => useContext(CartContext);
+// Fonction pour récupérer le panier à partir du localStorage
+const getCartFromLocalStorage = () => {
+  const storedCart = localStorage.getItem("cart");
+  return storedCart ? JSON.parse(storedCart) : [];
+};
 
-// Fournisseur pour le contexte
+// Fournisseur du contexte
 export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(getCartFromLocalStorage());
 
-  // Ajouter un produit au panier
-  const addToCart = (product, quantity = 1) => {
+  // Fonction pour ajouter un produit au panier
+  const addToCart = (product, quantity) => {
+    const item = {
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      quantity: quantity,
+      image: product.image,
+    };
+
     setCart((prevCart) => {
-      // Vérifier si le produit est déjà dans le panier
-      const existingProduct = prevCart.find((item) => item.id === product.id);
-      if (existingProduct) {
-        // Mettre à jour la quantité si déjà présent
-        return prevCart.map((item) =>
-          item.id === product.id ? { ...item, quantity: item.quantity + quantity } : item
-        );
+      const updatedCart = prevCart.map((p) =>
+        p.id === item.id
+          ? { ...p, quantity: p.quantity + quantity }
+          : p
+      );
+
+      if (!prevCart.some((p) => p.id === item.id)) {
+        updatedCart.push(item);
       }
-      // Sinon, ajouter le produit au panier
-      return [...prevCart, { ...product, quantity }];
+
+      localStorage.setItem("cart", JSON.stringify(updatedCart)); // Mettre à jour le localStorage
+      return updatedCart;
     });
   };
 
-  // Supprimer un produit du panier
-  const removeFromCart = (productId) => {
-    setCart((prevCart) => prevCart.filter((item) => item.id !== productId));
+  // Fonction pour supprimer un produit ou réduire la quantité dans le panier
+  const removeFromCart = (id) => {
+    setCart((prevCart) => {
+      const updatedCart = prevCart
+        .map((item) => {
+          if (item.id === id) {
+            if (item.quantity > 1) {
+              return { ...item, quantity: item.quantity - 1 };
+            } else {
+              return null;
+            }
+          }
+          return item;
+        })
+        .filter((item) => item !== null);
+
+      localStorage.setItem("cart", JSON.stringify(updatedCart)); // Mettre à jour le localStorage
+      return updatedCart;
+    });
   };
 
-  // Vider le panier
-  const clearCart = () => setCart([]);
+  // Synchroniser le panier dans localStorage à chaque changement
+  useEffect(() => {
+    if (cart.length > 0) {
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
+  }, [cart]);
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
       {children}
     </CartContext.Provider>
   );
 };
+
+// Utilisation du hook useCart
+export const useCart = () => useContext(CartContext);

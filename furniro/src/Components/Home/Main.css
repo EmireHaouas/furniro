@@ -51,10 +51,12 @@
     width: 222px;
     height: 74px;
     margin-top: 20px;
-
 }
 .stick_Button:hover{
     cursor: pointer;
+}
+.stick_Button:active{
+    transform: scale3d(0.9, 0.9, 0.9);
 }
 .dining_Img{
     width: 381px;

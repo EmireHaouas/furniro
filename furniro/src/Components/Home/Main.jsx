@@ -14,6 +14,7 @@ import lolito from '../../assets/imgs/lolito.png';
 import leviosa from '../../assets/imgs/leviosa.jpg';
 import grifo from '../../assets/imgs/grifo.png';
 import share_Img from '../../assets/imgs/share_Img.png';
+import { Link } from "react-router-dom";
 
 const Main = () => {
     // NeonElement component definition
@@ -41,7 +42,9 @@ const Main = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut<br />
                         elit tellus, luctus nec ullamcorper mattis.
                     </p>
+                    <Link to="/shop">
                     <button className="stick_Button">Buy Now</button>
+                    </Link>
                 </div>
             </section>
 

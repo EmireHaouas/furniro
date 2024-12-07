@@ -1,3 +1,60 @@
 .bannercheckout{
     width: 100%;
 }
+.rowcart_Check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.check_Productname{
+    font-family: 'poppins', sans-serif;
+    color: #9F9F9F;
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 20px;
+}
+.check_Productqty{
+    font-family: 'poppins', sans-serif;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 500;
+}
+.check_Productprice{
+    font-family: 'poppins', sans-serif;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 300;
+}
+.column_Check{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 80px;
+}
+.column_Check2{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.row_Check2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.p_Checkrow{
+    font-family: 'poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+}
+.p_checkrow2{
+    font-family: 'poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+}

@@ -1,60 +1,96 @@
-.bannercheckout{
+/* Conteneur principal */
+.checkout-container {
+    padding: 20px;
+  }
+  
+  .bannercheckout {
     width: 100%;
-}
-.rowcart_Check{
+    margin-bottom: 20px;
+  }
+  
+  .checkout-content {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-}
-.check_Productname{
-    font-family: 'poppins', sans-serif;
-    color: #9F9F9F;
-    font-size: 16px;
-    font-weight: 400;
-    padding-right: 20px;
-}
-.check_Productqty{
-    font-family: 'poppins', sans-serif;
-    color: #000000;
-    font-size: 12px;
-    font-weight: 500;
-}
-.check_Productprice{
-    font-family: 'poppins', sans-serif;
-    color: #000000;
-    font-size: 16px;
-    font-weight: 300;
-}
-.column_Check{
+    gap: 20px;
+  }
+  
+  /* Détails de facturation */
+  .billing-details {
+    flex: 2;
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .billing-details form input,
+  .billing-details form select,
+  .billing-details form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-row {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-right: 80px;
-}
-.column_Check2{
-    align-items: flex-end;
+    gap: 10px;
+  }
+  
+  /* Résumé de commande */
+  .order-summary {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .items_Cart {
+    margin-bottom: 20px;
+  }
+  
+  .rowcart_Check {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 80px;
-    margin-right: 80px;
-}
-.row_Check2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.p_Checkrow{
-    font-family: 'poppins', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    color: #000000;
-}
-.p_checkrow2{
-    font-family: 'poppins', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    color: #000000;
-}
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .rowcart_Check.header {
+    font-weight: bold;
+  }
+  
+  .column_Check {
+    flex: 2;
+  }
+  
+  .column_Check2 {
+    flex: 1;
+    text-align: right;
+  }
+  
+  /* Méthodes de paiement */
+  .payment-methods {
+    margin-top: 20px;
+  }
+  
+  .payment-methods label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .place-order {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .place-order:hover {
+    background: #0056b3;
+  }
+  

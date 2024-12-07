@@ -1,6 +1,6 @@
 /* Style de l'icône du panier */
 #cart-icon {
-    position: fixed;
+    
     top: 20px;
     right: 20px;
     cursor: pointer;
@@ -10,7 +10,6 @@
   
   /* Barre latérale (panier) */
   #shopping-cart {
-    position: fixed; /* Fixe la barre latérale pour qu'elle reste visible */
     top: 0;
     right: 0;
     width: 417px; /* Ajustez la largeur de la barre latérale */
@@ -71,7 +70,6 @@
 .cart-icon-image{
   width: 28px;
   height: 28px;
-  margin-top: 30px;
 }  
 .cart-icon-image:active{
   transform: scale(1.2);

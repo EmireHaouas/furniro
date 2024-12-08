@@ -1,5 +1,5 @@
 /* Conteneur principal */
-.checkout-container {
+.checkout_Container {
     padding: 0px;
   }
   
@@ -8,29 +8,19 @@
     margin-bottom: 20px;
   }
   
-  .checkout-content {
+  .checkout_Content {
     display: flex;
     gap: 20px;
+    padding-bottom: 70px;
   }
   
   /* Détails de facturation */
-  .billing-details {
-    flex: 2;
-    background: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .billing-details form input,
-  .billing-details form select,
-  .billing-details form textarea {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+  .billing_Details {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
   
   .form-row {
     display: flex;
@@ -38,12 +28,11 @@
   }
   
   /* Résumé de commande */
-  .order-summary {
+  .order_Summary {
     flex: 1;
     background: #fff;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: none;
   }
   
   .items_Cart {
@@ -93,4 +82,112 @@
   .place-order:hover {
     background: #0056b3;
   }
-  
+  .nameto_Check{
+    width: 211px;
+    height: 75px;
+    border-radius: 5px;
+    border: 1px solid #9F9F9F;
+    padding: 0 0 0 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.nameto_Check2{
+  width: 211px;
+  height: 75px;
+  border-radius: 5px;
+  border: 1px solid #9F9F9F;
+  padding: 0 0 0 0;
+  margin-bottom: 20px;
+}
+
+  .data_Check{
+    width: 453px;
+    height: 75px;
+    border-radius: 5px;
+    border: 1px solid #9F9F9F;
+    background-color: #FFFFFF;
+    padding: 0 0 0 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  .h1_Checkout{
+    font-family: 'poppins', sans-serif;
+    font-size: 36px;
+    color: #000000;
+    font-weight: 600;
+    margin-left: 100px;
+  }
+  .textarea_Checkout{
+    width: 453px;
+    height: 75px;
+    border-radius: 5px;
+    border: 1px solid #9F9F9F;
+    background-color: #FFFFFF;
+    padding: 0 0 0 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    resize: none;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .firstname_Check{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.lastname_Check{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.company_Check{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.country_Check{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.streetadress_Check{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.city_Check{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+form p {
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+.textarea_Checkout:focus, .data_Check:focus, .nameto_Check:focus, .nameto_Check2:focus{
+  outline: none;  /* Enlève la bordure de focus par défaut */
+  border: 2px solid #D9B26B;  /* Exemple : ajoute une bordure verte */
+  box-shadow: 0 0 5px #D9B26B; /* Ajoute une ombre autour de l'élément */
+}
+.p_Checkcolum{
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+}
+.p_Checkcolum2{
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+}

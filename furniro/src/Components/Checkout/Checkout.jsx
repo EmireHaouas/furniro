@@ -12,6 +12,9 @@ const Checkout = () => {
   if (cart.length === 0) {
     return <h2>Your cart is empty</h2>;
   }
+  // Calculer le total de la commande
+  const totalAmount = cart.reduce((total, item) => total + item.price * item.quantity, 0);
+
 
   return (
     <div className="checkout_Container">
@@ -23,10 +26,12 @@ const Checkout = () => {
       />
 
       {/* Détails de facturation */}
-      <h1 className="h1_Checkout">Billing details</h1>
+      
       <div className="checkout_Content">
+ 
         {/* Formulaire de facturation */}
         <div className="billing_Details">
+        <h1 className="h1_Checkout">Billing details</h1>
           <form>
             <div className="form-row">
               <div className="firstname_Check">
@@ -104,8 +109,15 @@ const Checkout = () => {
                   <p className="check_Productprice">${item.price}</p>
                   <p className="cart_Totdal">${item.price * item.quantity}</p>
                 </div>
+               
               </div>
+              
             ))}
+          </div>
+          {/* Affichage du total de la commande */}
+          <div className="ordertotal_Check">
+            <h3 className="h3_Totalcheck">Total</h3>
+            <p className="totalamount_Check">${totalAmount.toFixed(2)}</p> {/* Affichage du total */}
           </div>
 
           {/* Méthodes de paiement */}

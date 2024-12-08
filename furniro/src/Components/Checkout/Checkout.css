@@ -123,7 +123,9 @@
     font-size: 36px;
     color: #000000;
     font-weight: 600;
-    margin-left: 100px;
+    align-self: flex-start;
+    margin-left: 156px;
+
   }
   .textarea_Checkout{
     width: 453px;
@@ -189,5 +191,41 @@ form p {
   font-family: 'poppins', sans-serif;
   font-weight: 500;
   font-size: 24px;
+  color: #000000;
+}
+.check_Productname{
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #9F9F9F;
+}
+.h3_Totalcheck{
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.totalamount_Check{
+  font-family: 'poppins', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #B88E2F;
+}
+.ordertotal_Check{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart_Totdal{
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+  font-family: 'poppins', sans-serif;
+}
+.check_Productprice{
+  font-family: 'poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
   color: #000000;
 }

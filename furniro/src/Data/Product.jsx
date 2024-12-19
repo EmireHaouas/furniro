@@ -6,7 +6,7 @@ import respiraImage from "../assets/imgs/respiraB.png";
 const products = [
   {
     id: 1,
-    name: "Syltherine",
+    name: "Syltheine",
     image: syltherineImage, // Chemin vers l'image
     description: "Syltherine is a stylish café chair designed to elevate any space with its sleek and modern aesthetic.Compact yet sturdy, it stands out with its contemporary design and exceptional craftsmanship. Perfectly blending form and function, this chair offers optimal comfort while making a statement. Its streamlined silhouette and premium materials make it an ideal choice for cafés, home dining spaces, or offices seeking a touch of elegance and sophistication.",
     price: 200,

@@ -13,7 +13,7 @@ const products = [
   },
   {
     id: 2,
-    name: "Levisa",
+    name: "Leviosa",
     image: leviosaImage,
     description: "The Leviosa chair combines luxurious suede with a sleek, modern design to create the perfect blend of comfort and style. Its soft, high-quality suede upholstery offers a rich tactile experience, while its elegant silhouette makes it a standout piece in any room. Ideal for living spaces, dining areas, or offices, the Leviosa chair brings both sophistication and comfort to your decor. Designed with both aesthetics and durability in mind, it’s a timeless piece that elevates any setting.",
     price: 150,

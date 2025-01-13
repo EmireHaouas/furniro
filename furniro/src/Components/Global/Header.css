@@ -50,6 +50,14 @@ a:hover {
   a:active{
     transform: scale(1.1);
   }
+a.logo_Link{
+    color: initial;
+    text-decoration: initial;
+    transform: initial;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .logo_Pack{
     display: flex;
     flex-direction: row;

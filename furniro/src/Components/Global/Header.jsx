@@ -11,16 +11,18 @@ const Header = () => {
     return (
         <header className="header">
             <div className="test">
-            <Link to="/Home" className="logo_Link">
+            
                 <div className="logo_Pack">
+                <Link to="/" className="logo_Link">
                     
                     <img className="logo" alt="logo" src={logo} />
                     
                     <p className="logo_Name">Furniro</p>
+                    </Link>
                 </div>
-                </Link>
+                
                 <nav className="nav_Bar">
-                    <Link to="/home" className="home_Nav">Home</Link>
+                    <Link to="/" className="home_Nav">Home</Link>
                     <Link to="/shop" className="shop_Nav">Shop</Link>
                     <Link to="/about" className="about_Nav">About</Link>
                     <Link to="/contact" className="contact_Nav">Contact</Link>

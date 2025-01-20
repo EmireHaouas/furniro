@@ -80,6 +80,9 @@ const Main = () => {
                             <p className="name_Product">Slytherine</p>
                             <p className="details_Product">Stylish cafe chair</p>
                             <p className="price_Product">$100</p>
+                            <div className="quick_Add">
+                              <button className="quickadd_Cart">Add to cart</button>
+                            </div>
                         </div>
                         <div className="leviosa_Product">
                             <img className="leviosa_Img" alt="" src={leviosa} />

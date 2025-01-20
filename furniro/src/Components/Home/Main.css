@@ -360,6 +360,7 @@
     font-weight: 600;   
     align-self: center;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 .show_More:hover{
     cursor: pointer;

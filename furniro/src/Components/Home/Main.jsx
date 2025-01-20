@@ -20,12 +20,18 @@ import products from "../../Data/Product";
 
 const Main = () => {
     const { addToCart } = useCart(); // Utiliser la fonction "addToCart"
+    const [showMore, setShowMore] = useState(false);  // État pour contrôler l'affichage de products2
+
 
     const product = products;  // On garde tous les produits ici pour les afficher
 
     // Fonction pour ajouter au panier avec une quantité de 1
     const handleAddToCart = (product) => {
         addToCart(product, 1);  // Ajouter 1 de ce produit au panier
+    };
+    // Fonction pour basculer l'état de showMore
+    const toggleShowMore = () => {
+        setShowMore(prevState => !prevState);  // Alterner entre true/false
     };
    
     const NeonElement = () => {
@@ -201,7 +207,129 @@ const Main = () => {
                         </div>
                     </div>
                 </div>
-                <button className="show_More">Show More</button>
+                <button className="show_More" onClick={toggleShowMore}>
+                    {showMore ? "Show Less" : "Show More"}
+                </button>
+                {showMore && (
+                <div className="products2">
+                    <div className="row1_Products">
+                    <div className="slytherine_Product">
+                            <img className="syltherine_Img" alt="Syltherine" src={syltherine} />
+                            <p className="name_Product">{products[0].name}</p>
+                            <p className="details_Product">Stylish cafe chair</p>
+                            <p className="price_Product">${products[0].price}</p>
+                            <div className="quick_Add">
+                                <button
+                                    className="quickadd_Cart"
+                                    onClick={() => handleAddToCart(products[0])}  // Ajout rapide de Syltherine
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div className="leviosa_Product">
+                            <img className="leviosa_Img" alt="" src={leviosa} />
+                            <p className="name_Product">{products[1].name}</p>
+                            <p className="details_Product">Stylish cafe chair</p>
+                            <p className="price_Product">${products[1].price}</p>
+                            <div className="quick_Add">
+                            <button
+                                    className="quickadd_Cart"
+                                    onClick={() => handleAddToCart(products[1])}  // Ajout rapide de Syltherine
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div className="lolito_Product">
+                            <img className="lolito_Img" alt="" src={lolito} />
+                            <p className="name_Product">{products[2].name}</p>
+                            <p className="details_Product">Luxury big sofa</p>
+                            <p className="price_Product">${products[2].price}</p>
+                            <div className="quick_Add">
+                            <button
+                                    className="quickadd_Cart"
+                                    onClick={() => handleAddToCart(products[2])}  // Ajout rapide de Syltherine
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div className="respira_Product">
+                            <img className="respira_Img" alt="" src={respira} />
+                            <p className="name_Product">{products[3].name}</p>
+                            <p className="details_Product">Outdoor bar table and stool</p>
+                            <p className="price_Product">${products[3].price}</p>
+                            <div className="quick_Add">
+                            <button
+                                    className="quickadd_Cart"
+                                    onClick={() => handleAddToCart(products[3])}  // Ajout rapide de Syltherine
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row2_Products">
+                        <div className="zephyr_Product">
+                            <img className="zephyr_Img" alt="" src={Zephyr} />
+                            <p className="name_Product">{products[4].name}</p>
+                            <p className="details_Product">Refined seat</p>
+                            <p className="price_Product">${products[4].price}</p>
+                            <div className="quick_Add">
+                            <button
+                                    className="quickadd_Cart"
+                                    onClick={() => handleAddToCart(products[4])}  // Ajout rapide de Syltherine
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div className="astra_Product">
+                            <img className="astra_Img" alt="" src={astra} />
+                            <p className="name_Product">{products[5].name}</p>
+                            <p className="details_Product">Elegant bed</p>
+                            <p className="price_Product">${products[5].price}</p>
+                            <div className="quick_Add">
+                            <button
+                                    className="quickadd_Cart"
+                                    onClick={() => handleAddToCart(products[5])}  // Ajout rapide de Syltherine
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div className="pinkgy_Product">
+                            <img className="pinkgy_Img" alt="" src={pinkgy} />
+                            <p className="name_Product">{products[6].name}</p>
+                            <p className="details_Product">Wooden TV stand</p>
+                            <p className="price_Product">${products[6].price}</p>
+                            <div className="quick_Add">
+                            <button
+                                    className="quickadd_Cart"
+                                    onClick={() => handleAddToCart(products[6])}  // Ajout rapide de Syltherine
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div className="potty_Product">
+                            <img className="potty_Img" alt="" src={potty} />
+                            <p className="name_Product">{products[7].name}</p>
+                            <p className="details_Product">Minimalist shoe rack</p>
+                            <p className="price_Product">${products[7].price}</p>
+                            <div className="quick_Add">
+                            <button
+                                    className="quickadd_Cart"
+                                    onClick={() => handleAddToCart(products[7])}  // Ajout rapide de Syltherine
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  )}
             </section>
 
             <section className="share">

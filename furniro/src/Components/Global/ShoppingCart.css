@@ -13,12 +13,13 @@
     top: 0;
     right: 0;
     width: 417px; /* Ajustez la largeur de la barre latérale */
-    height: 100%; /* Prend toute la hauteur de l'écran */
+    height: 100vh; /* Prend toute la hauteur de l'écran */
     background-color: #fff; /* Couleur de fond */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre */
     transform: translateX(100%); /* Cache la barre latérale par défaut */
     transition: transform 0.3s ease-in-out; /* Animation fluide */
     z-index: 1000; /* Assure que la barre latérale est au-dessus */
+    overflow-y: auto; 
 }
 
 #shopping-cart.active {
@@ -26,8 +27,9 @@
     background-color: #FFFFFF;
     width: 417px;
     margin-top: 0;
-    height: auto;
+    height: 100vh;
     padding-bottom: 50px;
+    overflow-y: auto; 
 }
 
   
@@ -44,6 +46,7 @@
   #shopping-cart{
     margin-top: 20px;
     font-weight: bold;
+    overflow-y: auto; 
   }
   
   /* Bouton pour fermer la barre */
@@ -66,6 +69,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9998; /* Juste en dessous du panier */
+    overflow-y: auto; 
   }
 .cart-icon-image{
   width: 28px;
@@ -93,12 +97,13 @@
     top: 0;
     right: 0;
     width: 300px;
-    height: 100%;
+    height: 100vh;
     background-color: #fff;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     z-index: 9999; /* Augmenter pour s'assurer que c'est au-dessus de tout */
+    overflow-y: auto; 
 }
 .close_icon{
   width: 16.63px;
@@ -149,6 +154,8 @@ hr{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 .sub_Cart{
   font-family: 'poppins', sans-serif;
@@ -246,3 +253,6 @@ hr{
   font-size: 16px;
   color: #B88E2F;
 }
+
+
+

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";  // Ajouter useState ici
 import './Main.css';
 import { useInView } from 'react-intersection-observer';
 import background_banner from '../../assets/imgs/background_banner.png';
@@ -7,17 +7,27 @@ import dining from '../../assets/imgs/dining.png';
 import living from '../../assets/imgs/living.png';
 import syltherine from '../../assets/imgs/syltherine.png';
 import respira from '../../assets/imgs/respira.jpg';
-import potty from '../../assets/imgs/potty.png';
-import pingky from '../../assets/imgs/pingky.png';
-import muggo from '../../assets/imgs/muggo.png';
+import potty from '../../assets/imgs/potty.jpg';
+import pinkgy from '../../assets/imgs/pinkgy.jpg';
 import lolito from '../../assets/imgs/lolito.png';
 import leviosa from '../../assets/imgs/leviosa.jpg';
-import grifo from '../../assets/imgs/grifo.png';
+import astra from '../../assets/imgs/astra.jpg';
 import share_Img from '../../assets/imgs/share_Img.png';
+import Zephyr from '../../assets/imgs/Zephyr.jpg';
 import { Link } from "react-router-dom";
+import { useCart } from "../Global/Cartcontext"; 
+import products from "../../Data/Product";
 
 const Main = () => {
-    // NeonElement component definition
+    const { addToCart } = useCart(); // Utiliser la fonction "addToCart"
+
+    const product = products;  // On garde tous les produits ici pour les afficher
+
+    // Fonction pour ajouter au panier avec une quantité de 1
+    const handleAddToCart = (product) => {
+        addToCart(product, 1);  // Ajouter 1 de ce produit au panier
+    };
+   
     const NeonElement = () => {
         const { ref, inView } = useInView({
             triggerOnce: true,  // Trigger effect once
@@ -70,63 +80,124 @@ const Main = () => {
                     </div>
                 </div>
             </section>
-
+           
             <section className="our_Products">
                 <h2 className="h2_Our">Our products</h2>
                 <div className="products">
                     <div className="row1_Products">
-                        <div className="slytherine_Product">
-                            <img className="syltherine_Img" alt="" src={syltherine} />
-                            <p className="name_Product">Slytherine</p>
+                    <div className="slytherine_Product">
+                            <img className="syltherine_Img" alt="Syltherine" src={syltherine} />
+                            <p className="name_Product">{products[0].name}</p>
                             <p className="details_Product">Stylish cafe chair</p>
-                            <p className="price_Product">$100</p>
+                            <p className="price_Product">${products[0].price}</p>
                             <div className="quick_Add">
-                              <button className="quickadd_Cart">Add to cart</button>
+                                <button
+                                    className="quickadd_Cart"
+                                    onClick={() => handleAddToCart(products[0])}  // Ajout rapide de Syltherine
+                                >
+                                    Add to Cart
+                                </button>
                             </div>
                         </div>
                         <div className="leviosa_Product">
                             <img className="leviosa_Img" alt="" src={leviosa} />
-                            <p className="name_Product">Leviosa</p>
+                            <p className="name_Product">{products[1].name}</p>
                             <p className="details_Product">Stylish cafe chair</p>
-                            <p className="price_Product">$200</p>
+                            <p className="price_Product">${products[1].price}</p>
+                            <div className="quick_Add">
+                            <button
+                                    className="quickadd_Cart"
+                                    onClick={() => handleAddToCart(products[1])}  // Ajout rapide de Syltherine
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
                         </div>
                         <div className="lolito_Product">
                             <img className="lolito_Img" alt="" src={lolito} />
-                            <p className="name_Product">Lolito</p>
+                            <p className="name_Product">{products[2].name}</p>
                             <p className="details_Product">Luxury big sofa</p>
-                            <p className="price_Product">$500</p>
+                            <p className="price_Product">${products[2].price}</p>
+                            <div className="quick_Add">
+                            <button
+                                    className="quickadd_Cart"
+                                    onClick={() => handleAddToCart(products[2])}  // Ajout rapide de Syltherine
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
                         </div>
                         <div className="respira_Product">
                             <img className="respira_Img" alt="" src={respira} />
-                            <p className="name_Product">Respira</p>
+                            <p className="name_Product">{products[3].name}</p>
                             <p className="details_Product">Outdoor bar table and stool</p>
-                            <p className="price_Product">$400</p>
+                            <p className="price_Product">${products[3].price}</p>
+                            <div className="quick_Add">
+                            <button
+                                    className="quickadd_Cart"
+                                    onClick={() => handleAddToCart(products[3])}  // Ajout rapide de Syltherine
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div className="row2_Products">
-                        <div className="grifo_Product">
-                            <img className="grifo_Img" alt="" src={grifo} />
-                            <p className="name_Product">Grifo</p>
-                            <p className="details_Product">Night lamp</p>
-                            <p className="price_Product">$60</p>
+                        <div className="zephyr_Product">
+                            <img className="zephyr_Img" alt="" src={Zephyr} />
+                            <p className="name_Product">{products[4].name}</p>
+                            <p className="details_Product">Refined seat</p>
+                            <p className="price_Product">${products[4].price}</p>
+                            <div className="quick_Add">
+                            <button
+                                    className="quickadd_Cart"
+                                    onClick={() => handleAddToCart(products[4])}  // Ajout rapide de Syltherine
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
                         </div>
-                        <div className="muggo_Product">
-                            <img className="muggo_Img" alt="" src={muggo} />
-                            <p className="name_Product">Muggo</p>
-                            <p className="details_Product">Small mug</p>
-                            <p className="price_Product">$350</p>
+                        <div className="astra_Product">
+                            <img className="astra_Img" alt="" src={astra} />
+                            <p className="name_Product">{products[5].name}</p>
+                            <p className="details_Product">Elegant bed</p>
+                            <p className="price_Product">${products[5].price}</p>
+                            <div className="quick_Add">
+                            <button
+                                    className="quickadd_Cart"
+                                    onClick={() => handleAddToCart(products[5])}  // Ajout rapide de Syltherine
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
                         </div>
                         <div className="pinkgy_Product">
-                            <img className="pinkgy_Img" alt="" src={pingky} />
-                            <p className="name_Product">Pinkgy</p>
-                            <p className="details_Product">Cute bed set</p>
-                            <p className="price_Product">$272</p>
+                            <img className="pinkgy_Img" alt="" src={pinkgy} />
+                            <p className="name_Product">{products[6].name}</p>
+                            <p className="details_Product">Wooden TV stand</p>
+                            <p className="price_Product">${products[6].price}</p>
+                            <div className="quick_Add">
+                            <button
+                                    className="quickadd_Cart"
+                                    onClick={() => handleAddToCart(products[6])}  // Ajout rapide de Syltherine
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
                         </div>
                         <div className="potty_Product">
                             <img className="potty_Img" alt="" src={potty} />
-                            <p className="name_Product">Potty</p>
-                            <p className="details_Product">Minimalist flower pot</p>
-                            <p className="price_Product">$80</p>
+                            <p className="name_Product">{products[7].name}</p>
+                            <p className="details_Product">Minimalist shoe rack</p>
+                            <p className="price_Product">${products[7].price}</p>
+                            <div className="quick_Add">
+                            <button
+                                    className="quickadd_Cart"
+                                    onClick={() => handleAddToCart(products[7])}  // Ajout rapide de Syltherine
+                                >
+                                    Add to Cart
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

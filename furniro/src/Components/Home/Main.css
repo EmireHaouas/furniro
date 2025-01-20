@@ -140,6 +140,7 @@
     width: 285px;
     height: 301px;
 
+
 }
 .leviosa_Img{
     width: 285px;
@@ -156,12 +157,12 @@
     height: 301px;
 
 }
-.grifo_Img{
+.zephyr_Img{
     width: 285px;
     height: 301px;
 
 }
-.muggo_Img{
+.astra_Img{
     width: 285px;
     height: 301px;
 
@@ -185,7 +186,44 @@
     text-align: center;
     padding: 10px;
 }
+.slytherine_Product {
+    background-color: #F4F5F7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
 .slytherine_Product:hover .quick_Add {
+    visibility: visible; /* Affiché au survol */
+    opacity: 1;          /* Deviens opaque */
+}
+.leviosa_Product:hover .quick_Add {
+    visibility: visible; /* Affiché au survol */
+    opacity: 1;          /* Deviens opaque */
+}
+.lolito_Product:hover .quick_Add {
+    visibility: visible; /* Affiché au survol */
+    opacity: 1;          /* Deviens opaque */
+}
+.respira_Product:hover .quick_Add {
+    visibility: visible; /* Affiché au survol */
+    opacity: 1;          /* Deviens opaque */
+}
+.zephyr_Product:hover .quick_Add {
+    visibility: visible; /* Affiché au survol */
+    opacity: 1;          /* Deviens opaque */
+}
+.astra_Product:hover .quick_Add {
+    visibility: visible; /* Affiché au survol */
+    opacity: 1;          /* Deviens opaque */
+}
+.pinkgy_Product:hover .quick_Add {
+    visibility: visible; /* Affiché au survol */
+    opacity: 1;          /* Deviens opaque */
+}
+.potty_Product:hover .quick_Add {
     visibility: visible; /* Affiché au survol */
     opacity: 1;          /* Deviens opaque */
 }
@@ -215,8 +253,8 @@
 .leviosa_Product:hover, 
 .lolito_Product:hover, 
 .respira_Product:hover, 
-.grifo_Product:hover, 
-.muggo_Product:hover, 
+.zephyr_Product:hover, 
+.astra_Product:hover, 
 .pinkgy_Product:hover, 
 .potty_Product:hover {
     transform: translateY(-5px);
@@ -239,6 +277,8 @@
     align-items: flex-start;
     margin-right: 20px;
     margin-left: 40px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
 }
 .lolito_Product{
     background-color: #F4F5F7;
@@ -254,13 +294,13 @@
     flex-direction: column;
     align-items: flex-start;
 }
-.grifo_Product{
+.zephyr_Product{
     background-color: #F4F5F7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.muggo_Product{
+.astra_Product{
     background-color: #F4F5F7;
     display: flex;
     flex-direction: column;

@@ -2,6 +2,10 @@ import syltherineImage from "../assets/imgs/syltherineB.png";
 import leviosaImage from "../assets/imgs/leviosaB.png";
 import lolitoImage from "../assets/imgs/lolitoB.png";
 import respiraImage from "../assets/imgs/respiraB.png";
+import zephyrImage from "../assets/imgs/zephyrB.png";
+import astraImage from "../assets/imgs/astraB.png";
+import pinkgyImage from "../assets/imgs/pinkgyB.png";
+import pottyImage from "../assets/imgs/pottyB.png";
 
 const products = [
   {
@@ -31,6 +35,34 @@ const products = [
     image: respiraImage,
     description: "Elevate your outdoor gatherings with the Respira Outdoor Bar Table and Stool set. Crafted with durability in mind, this stylish set includes a sleek bar table and comfortable stools, designed for both elegance and functionality. Perfect for patios, gardens, or balconies, the Respira set is made from weather-resistant materials to ensure long-lasting quality, even in the harshest conditions. With its clean, modern design, it's the perfect choice for enjoying drinks or meals outdoors in comfort and sophistication.",
     price: 600,
+  },
+  {
+    id: 5,
+    name: "Zephyr",
+    image: zephyrImage,
+    description: "The Zephyr Night Lamp is a sleek and modern lighting solution for any room. Its minimalist design features a slim, cylindrical shape and a soft, diffused light that creates a warm and inviting atmosphere. Perfect for bedrooms, living rooms, or offices, the Zephyr lamp adds a touch of elegance and sophistication to your space. With its high-quality materials and energy-efficient LED bulb, it's a stylish and eco-friendly choice for your home.",
+    price: 380,
+  },
+  {
+    id: 6,
+    name: "Astra",
+    image: astraImage,
+    description: "dede",
+    price: 489,
+  },
+  {
+    id: 7,
+    name: "Pinkgy",
+    image: pinkgyImage,
+    description: "dede",
+    price: 179,
+  },
+  {
+    id: 8,
+    name: "Potty",
+    image: pottyImage,
+    description: "dede",
+    price: 99,
   },
 
 ];

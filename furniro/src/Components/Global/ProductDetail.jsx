@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useCart } from "../Global/Cartcontext"; // Importer le contexte
 import products from "../../Data/Product";
@@ -15,6 +15,9 @@ const ProductDetail = () => {
   if (!product) {
     return <h2>Product not found</h2>;
   }
+  useEffect(() => {
+    window.scrollTo(0, 0);  // Cela scroll toujours en haut de la page
+  }, []);  // Ce tableau vide assure que l'effet ne s'exécute qu'une seule fois à l'initialisation du composant
 
   // Fonction pour mettre à jour la quantité
   const handleQuantityChange = (newQuantity) => {

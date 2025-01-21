@@ -227,6 +227,39 @@
     visibility: visible; /* Affiché au survol */
     opacity: 1;          /* Deviens opaque */
 }
+.velloria_Product:hover .quick_Add {
+    visibility: visible; /* Affiché au survol */
+    opacity: 1;          /* Deviens opaque */
+}
+.lunara_Product:hover .quick_Add {
+    visibility: visible; /* Affiché au survol */
+    opacity: 1;          /* Deviens opaque */
+}
+.tessera_Product:hover .quick_Add {
+    visibility: visible; /* Affiché au survol */
+    opacity: 1;          /* Deviens opaque */
+}
+.nyvora_Product:hover .quick_Add {
+    visibility: visible; /* Affiché au survol */
+    opacity: 1;          /* Deviens opaque */
+}
+.aqualis_Product:hover .quick_Add {
+    visibility: visible; /* Affiché au survol */
+    opacity: 1;          /* Deviens opaque */
+}
+.orlina_Product:hover .quick_Add {
+    visibility: visible; /* Affiché au survol */
+    opacity: 1;          /* Deviens opaque */
+}
+.mirella_Product:hover .quick_Add {
+    visibility: visible; /* Affiché au survol */
+    opacity: 1;          /* Deviens opaque */
+}
+.elira_Product:hover .quick_Add {
+    visibility: visible; /* Affiché au survol */
+    opacity: 1;          /* Deviens opaque */
+}
+
 .quickadd_Cart {
     background-color: #FFFFFF; /* Couleur du bouton */
     color: #B88E2F;
@@ -256,14 +289,21 @@
 .zephyr_Product:hover, 
 .astra_Product:hover, 
 .pinkgy_Product:hover, 
-.potty_Product:hover {
+.potty_Product:hover,
+.velloria_Product:hover,
+.lunara_Product:hover,
+.tessera_Product:hover,
+.nyvora_Product:hover,
+.aqualis_Product:hover,
+.orlina_Product:hover,
+.mirella_Product:hover,
+.elira_Product:hover{
     transform: translateY(-5px);
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: rgba(58, 58, 58, 0.3); /* Fond semi-transparent au survol */
-      
-
 }
+
 .living:hover,
 .dining:hover,
 .bedroom:hover{
@@ -321,6 +361,70 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+.velloria_Product{
+    background-color: #F4F5F7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.lunara_Product{
+    background-color: #F4F5F7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.tessera_Product{
+    background-color: #F4F5F7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.nyvora_Product{
+    background-color: #F4F5F7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.aqualis_Product{
+    background-color: #F4F5F7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.orlina_Product{
+    background-color: #F4F5F7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.mirella_Product{
+    background-color: #F4F5F7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.elira_Product{
+    background-color: #F4F5F7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-right: 40px;
 }
 .name_Product{
     font-family: 'Poppins', sans-serif;

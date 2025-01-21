@@ -1,4 +1,6 @@
-/* Style de l'icône du panier */
+a{
+  text-decoration: none;
+}
 #cart-icon {
     
     top: 20px;
@@ -121,21 +123,36 @@ hr{
   width: 85%;
   color: #D9D9D9;
 }
-.cart_Button{
+.cart_Button {
   border-radius: 50px;
-  background-color: #FFFFFF;
-  border: solid;
-  border-color: #000000;
-  border-width: 0.5px;
+  background-color: #FFFFFF;  /* Fond blanc */
+  border: 1px solid #000000;  /* Bordure noire plus épaisse */
   font-size: 12px;
   font-family: 'poppins', sans-serif;
   font-weight: 400;
-  padding: 2px 30px 2px 30px;
+  padding: 3px 30px;  /* Plus de padding pour un bouton plus grand */
   cursor: pointer;
-
+  color: #000000;  /* Texte noir */
+  text-decoration: none;  /* Assurer qu'il n'y a pas de soulignement si c'est un lien */
+  display: inline-block; /* Pour que le lien se comporte comme un bouton */
+  transition: all 0.3s ease; /* Animation fluide pour le survol */
+}
+.checkout_Button {
+  border-radius: 50px;
+  background-color: #FFFFFF;  /* Fond blanc */
+  border: 1px solid #000000;  /* Bordure noire */
+  font-size: 12px;
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+  padding: 3px 30px;  /* Même padding pour consistance */
+  cursor: pointer;
+  color: #000000;  /* Texte noir */
+  text-decoration: none;  /* Pas de soulignement */
+  display: inline-block; /* Pour un affichage cohérent */
+  transition: all 0.3s ease;
 }
 .cart_Button:active{
-  transform: translateY(2px);
+  transform: translateY(1px);
 }
 .checkout_Button{
   border-radius: 50px;

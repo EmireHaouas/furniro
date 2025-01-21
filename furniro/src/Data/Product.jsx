@@ -6,6 +6,14 @@ import zephyrImage from "../assets/imgs/zephyrB.png";
 import astraImage from "../assets/imgs/astraB.png";
 import pinkgyImage from "../assets/imgs/pinkgyB.png";
 import pottyImage from "../assets/imgs/pottyB.png";
+import velloriaImage from "../assets/imgs/velloriaB.png";
+import lunaraImage from "../assets/imgs/lunaraB.png";
+import tesseraImage from "../assets/imgs/tesseraB.png";
+import nyvoraImage from "../assets/imgs/nyvoraB.png";
+import aqualisImage from "../assets/imgs/aqualisB.png";
+import orlinaImage from "../assets/imgs/orlinaB.png";
+import mirellaImage from "../assets/imgs/mirellaB.png";
+import eliraImage from "../assets/imgs/eliraB.png";
 
 const products = [
   {
@@ -63,6 +71,62 @@ const products = [
     image: pottyImage,
     description: "dede",
     price: 99,
+  },
+  {
+    id: 9,
+    name: "Velloria",
+    image: velloriaImage,
+    description: "dede",
+    price: 299,
+  },
+  {
+    id: 10,
+    name: "Lunara",
+    image: lunaraImage,
+    description: "dede",
+    price: 399,
+  },
+  {
+    id: 11,
+    name: "Tessera",
+    image: tesseraImage,
+    description: "dede",
+    price: 499,
+  },
+  {
+    id: 12,
+    name: "Nyvora",
+    image: nyvoraImage,
+    description: "dede",
+    price: 180,
+  },
+  {
+    id: 13,
+    name: "Aqualis",
+    image: aqualisImage,
+    description: "dede",
+    price: 250
+  },
+  {
+    id: 14,
+    name: "Orlina",
+    image: orlinaImage,
+    description: "dede",
+    price: 390
+  },
+  {
+    id: 15,
+    name: "Mirella",
+    image: mirellaImage,
+    description: "dede",
+    price: 1100
+  },
+  {
+    id: 16,
+    name: "Elira",
+    image: eliraImage,
+    description: "dede",
+    price: 280
   },
 
 ];

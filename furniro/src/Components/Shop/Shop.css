@@ -55,6 +55,90 @@
     width: 285px;
     height: 301px;
 }
+.imgproduct_05{
+    background-image: url('../../assets/imgs/Zephyr.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 285px;
+    height: 301px;
+}
+.imgproduct_06{
+    background-image: url('../../assets/imgs/astra.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 285px;
+    height: 301px;
+}
+.imgproduct_07{
+    background-image: url('../../assets/imgs/pinkgy.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 285px;
+    height: 301px;
+}
+.imgproduct_08{
+    background-image: url('../../assets/imgs/potty.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 285px;
+    height: 301px;
+}
+.imgproduct_09{
+    background-image: url('../../assets/imgs/velloria.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 285px;
+    height: 301px;
+}
+.imgproduct_10{
+    background-image: url('../../assets/imgs/lunara.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 285px;
+    height: 301px;
+}
+.imgproduct_11{
+    background-image: url('../../assets/imgs/tessera.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 285px;
+    height: 301px;
+}
+.imgproduct_12{
+    background-image: url('../../assets/imgs/nyvora.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 285px;
+    height: 301px;
+}
+.imgproduct_13{
+    background-image: url('../../assets/imgs/aqualis.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 285px;
+    height: 301px;
+}
+.imgproduct_14{
+    background-image: url('../../assets/imgs/orlina.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 285px;
+    height: 301px;
+}
+.imgproduct_15{
+    background-image: url('../../assets/imgs/mirella.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 285px;
+    height: 301px;
+}
+.imgproduct_16{
+    background-image: url('../../assets/imgs/elira.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 285px;
+    height: 301px;
+}
 .cart_Product1{
     display: flex;
     flex-direction: column;

@@ -73,6 +73,7 @@ const Main = () => {
                     <p className="p_Stick2">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut<br />
                         elit tellus, luctus nec ullamcorper mattis.
+                        
                     </p>
                     <Link to="/shop">
                     <button className="stick_Button">Buy Now</button>

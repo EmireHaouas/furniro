@@ -10,20 +10,37 @@ const ShoppingCart = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const { cart, removeFromCart } = useCart(); // Obtenir les articles du panier
 
+  // Calcul du nombre total d'articles dans le panier
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+
   const toggleCart = () => {
     setIsCartOpen(!isCartOpen);
   };
 
   return (
     <div>
+      {/* Icone du panier */}
       {!isCartOpen && (
-        <div id="cart-icon" onClick={toggleCart} className="shopping-cart-icon">
+        <div
+          id="cart-icon"
+          onClick={toggleCart}
+          className="shopping-cart-icon"
+        >
           <img src={cart_Icon} alt="Cart Icon" className="cart-icon-image" />
+          {/* Affichage du compteur uniquement si le panier n'est pas vide */}
+          {totalItems > 0 && (
+            <span
+              className={`cart-item-count ${totalItems > 9 ? "large-number" : ""}`}
+            >
+              {totalItems}
+            </span>
+          )}
         </div>
       )}
 
       {isCartOpen && <div id="overlay" onClick={toggleCart}></div>}
 
+      {/* Panier */}
       <div id="shopping-cart" className={isCartOpen ? "active" : ""}>
         <div className="row1">
           <button className="close-btn" onClick={toggleCart}>
@@ -35,23 +52,29 @@ const ShoppingCart = () => {
 
         {/* Liste des articles dans le panier */}
         <ul>
-            
           {cart.map((item) => (
             <li key={item.id}>
-              
-                {/* Ajouter l'image du produit */}
-                <div className="row_Productcart">
-                <img src={item.image} alt={item.name} className="cartitem_Image" />
-                <div className='nameprice_Cart'>
-                <h4 className='nameproduct_Cart'>{item.name}</h4>
-                <div className='priceqty_Cart'>
-            
-                <p className='qty_Cart'>{item.quantity} <span className='qty_Span'>X</span> </p>
-                <p className='price_Cart'> ${item.price}</p>
+              <div className="row_Productcart">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="cartitem_Image"
+                />
+                <div className="nameprice_Cart">
+                  <h4 className="nameproduct_Cart">{item.name}</h4>
+                  <div className="priceqty_Cart">
+                    <p className="qty_Cart">
+                      {item.quantity} <span className="qty_Span">X</span>{" "}
+                    </p>
+                    <p className="price_Cart"> ${item.price}</p>
+                  </div>
                 </div>
-                </div>
-              
-              <img src={cartdelete_Icon} alt="Delete Icon" className="cartdelete_Icon"  onClick={() => removeFromCart(item.id)}></img> 
+                <img
+                  src={cartdelete_Icon}
+                  alt="Delete Icon"
+                  className="cartdelete_Icon"
+                  onClick={() => removeFromCart(item.id)}
+                />
               </div>
             </li>
           ))}
@@ -60,10 +83,13 @@ const ShoppingCart = () => {
         {cart.length > 0 ? (
           <div>
             <div className="total_Cart">
-            Subtotal 
-            
-            <span className="total_Amount">
-              ${cart.reduce((total, item) => total + item.price * item.quantity, 0)}
+              Subtotal
+              <span className="total_Amount">
+                $
+                {cart.reduce(
+                  (total, item) => total + item.price * item.quantity,
+                  0
+                )}
               </span>
             </div>
             <hr />

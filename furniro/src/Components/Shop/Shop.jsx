@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import './Shop.css';
-import bannershop_Img from '../../assets/imgs/bannershop_Img.png';
+import bannershop_Img from '../../assets/imgs/bannershop_Img.webp';
 import Warranty from "../Global/Warranty";
 const Shop=() => {
 

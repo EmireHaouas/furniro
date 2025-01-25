@@ -1,6 +1,6 @@
 import React from "react";
 import "./Checkout.css";
-import bannercheckout from "../../assets/imgs/bannercheckout.png";
+import bannercheckout from "../../assets/imgs/bannercheckout.webp";
 import Warranty from "../Global/Warranty";
 import { useCart } from "../Global/Cartcontext"; // Importer le contexte
 import Countries from '../../Data/Countries';

@@ -270,6 +270,41 @@ hr{
   font-size: 16px;
   color: #B88E2F;
 }
+.cart-icon-image {
+  position: sticky; /* L'icône reste fixe dans la fenêtre */
+  top: 20px; /* Ajuste la position de l'icône */
+  right: 20px; /* Ajuste la position de l'icône */
+}
+
+#cart-icon {
+  top: 20px; /* Maintient la position du conteneur */
+  right: 20px; /* Maintient la position du conteneur */
+  position: sticky;
+  top: 100px; 
+}
+
+.cart-item-count {
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  color: #B88E2F;
+  padding: 2px 5px;
+  min-width: 20px;
+  text-align: center;
+  line-height: 1;
+  z-index: 10;
+  top: -30%;
+  bottom: 11%;
+  right: 0px;
+  left: 3%;
+  font-size: 20px;
+}
+
+.cart-item-count.large-number {
+  top: -25%;
+  left: 0%;
+  font-size: 20px; /* Augmente la taille du texte si le nombre dépasse 9 */
+  min-width: 25px; /* Augmente la taille du cercle */
+}
 
 
 

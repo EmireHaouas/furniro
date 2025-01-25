@@ -4,7 +4,7 @@ import Warranty from "../Global/Warranty";
 import vector_Icon from '../../assets/imgs/vector_Icon.png';
 import phone_Icon from '../../assets/imgs/phone_Icon.png';
 import clock_Icon from '../../assets/imgs/clock_Icon.png';
-import bannercontact from '../../assets/imgs/bannercontact.png';
+import bannercontact from '../../assets/imgs/bannercontact.webp';
 const Contact=() =>{
      return(
         <div>

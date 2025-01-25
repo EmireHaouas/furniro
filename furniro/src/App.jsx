@@ -13,7 +13,8 @@ import Contact from './Components/Contact/Contact';
 const App = () => {
   return (
     <CartProvider>
-      <Router>
+      <Router basename="/furniro"> 
+      
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

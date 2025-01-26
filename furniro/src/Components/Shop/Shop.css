@@ -215,4 +215,57 @@
     color: #3A3A3A;
     margin-left: 15px;
 }
+@media (max-width: 480px){
+    .row1_Shop{
+        flex-wrap: wrap;
+    }
+    .imgproduct_01,.imgproduct_02,.imgproduct_03,.imgproduct_04{
+        width: 195px;
+        height: 200px;
+    }
+.product1_Name, .product2_Name, .product3_Name, .product4_Name{
+    font-size: 18px;
+}
+.product1_Description, .product2_Description, .product3_Description, .product4_Description{
+    font-size: 14px;
+}
+.product1_Price, .product2_Price, .product3_Price, .product4_Price{
+    font-size: 16px;
+}
+.details_Product1, .details_Product2, .details_Product3, .details_Product4{
+    width:  100%;
+}
+.row2_Shop{
+    flex-wrap: wrap;
+}
+.imgproduct_05,.imgproduct_06,.imgproduct_07,.imgproduct_08{
+    width: 195px;
+    height: 200px;
+}
+.row3_Shop{
+    flex-wrap: wrap;
+}
+.imgproduct_09,.imgproduct_10,.imgproduct_11,.imgproduct_12{
+    width: 195px;
+    height: 200px;
+}
+.row4_Shop{
+    flex-wrap: wrap;
+}
+.imgproduct_13,.imgproduct_14,.imgproduct_15,.imgproduct_16{
+    width: 195px;
+    height: 200px;
+}
+.cart_Product1, .cart_Product2, .cart_Product3, .cart_Product4{
+    width: 195px;
+    height: 371px;
+}
+
+}
+
+
+
+
+
+
 

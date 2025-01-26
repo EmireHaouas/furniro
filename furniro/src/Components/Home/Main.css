@@ -3,8 +3,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-   /* height: 100vh; /* Ajustez selon vos besoins */
-   height: 700px;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -520,4 +519,119 @@
       0 0 100px #00f;
       animation: neonAnimation 3s ease-out forwards; /* Animation plus lente */
   }
+  @media (max-width: 480px){
+    .h1_Stick{
+        font-size: 38px;
+        line-height: 37px;
+    }
+    .p_Stick2{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .stick_Button{
+        width: 160px;
+        height: 48px;
+    }
+    .stick{
+        margin-top: 0;
+        margin-left: 30px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .h1_stick{
+        font-size: 38px;
+        line-height: 37px;
+    }
+    .p_stick2{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .stick_Button{
+        width: 160px;
+        height: 48px;
+    }
+    .stick{
+        margin-top: 0;
+        margin-left: 30px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .banner{
+        height: 530px;
+    }
+    .dining_Img{
+        width: 135px;
+        height: 180px;
+    }
+    .bedromm_Img{
+        width: 135px;
+        height: 180px;
+    }
+    .living_Img{
+        width: 135px;
+        height: 180px;
+    }
+    .p_Dining, .p_Living, .p_Bedroom{
+        font-size: 14px;
+    }
+    .h2_Browse{
+        font-size: 22px;
+    }
+    .p_Browse{
+        font-size: 17px;
+        padding-left: 5px;
+    }
+    
+    .h3_Share{
+        font-size: 31px;
+        padding-bottom: 30px;
+    }    
+    .row1_Products{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .row2_Products{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .syltherine_Img,.leviosa_Img,.lolito_Img,.respira_Img, .zephyr_Img, .astra_Img, .pinkgy_Img, .potty_Img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+.name_Product{
+    font-size: 18px;
+}
+.product1_Description, .product2_Description, .product3_Description, .product4_Description{
+    font-size: 14px;
+}
+.price_Product{
+    font-size: 16px;
+}
+.details_Product{
+    width:  100%;
+    font-size: 14px;
+}
+.slytherine_Product,.leviosa_Product,.lolito_Product,.respira_Product,.zephyr_Product,.astra_Product,.pinkgy_Product,.potty_Product,.velloria_Product,.lunara_Product,.tessera_Product,.nyvora_Product,.aqualis_Product,.orlina_Product,.mirella_Product,.elira_Product{
+    width: 45%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    
+}
+.h2_Our{
+    font-size: 31px;
   
+}
+.share{
+    width: 100%;
+}
+.share_img{
+    width: 100%;
+}
+.test{
+    padding-right: 0;
+    margin-right: 0;
+    padding-left: 0;
+}
+  }

@@ -65,3 +65,50 @@
     color: #898989;
     margin-top: 0;
 }
+@media (max-width: 480px){
+    .warranty{
+        flex-direction: column;
+        width: 25%;
+
+    }
+    .quality{
+        flex-direction: column;
+        width: 25%;
+
+    }
+    .shipping{
+        flex-direction: column;
+        width: 25%;
+
+    }
+    .support{
+        flex-direction: column;
+        width: 25%;
+
+    }
+    .trophy_Icon, .shipping_Icon, .warranty_Icon, .support_Icon{
+        width: 25px;
+        height: 25px;
+    }
+    .h3_Quality, .h3_Shipping, .h3_Suppport, .h3_Warranty{
+        font-size: 13px;
+    }
+    .p_Quality, .p_Shipping, .p_Support, .p_Warranty{
+        font-size: 10px;
+    }
+    .warranty_Products{
+        align-items: center;
+        height: 60px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+  
+
+
+
+
+
+
+
+
+}

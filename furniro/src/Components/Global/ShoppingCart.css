@@ -306,5 +306,54 @@ hr{
   min-width: 25px; /* Augmente la taille du cercle */
 }
 
+@media (max-width: 480px){
+  .close_icon{
+    width: 19.63px;
+    height: 23px;
+    margin-top: 23px;
+  }
+  .row1{
+    padding-top: 10px;
+  }
+  #shopping-cart.active{
+    width: 70%;
+  }
+  .cartitem_Image{
+    width: 80px;
+    height: 77px;
+  }
+  .title_Cart{
+    font-size: 20px;
+  }
+  .nameproduct_Cart{
+    font-size: 14px;
+  }
+  .qty_Cart{
+    font-size: 14px;
+  }
+  .total_Cart{
+    font-size: 14px;
+  }
+  .total_Amount{
+    font-size: 14px;
+  }
+  .button_Cart{
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+}
+
 
 

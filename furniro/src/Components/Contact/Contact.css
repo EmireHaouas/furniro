@@ -145,5 +145,68 @@
     border: 2px solid #D9B26B;  /* Exemple : ajoute une bordure verte */
     box-shadow: 0 0 5px #D9B26B; /* Ajoute une ombre autour de l'élément */
 }
+@media (max-width: 480px){
+    .title_Contact{
+        font-size: 31px;
+    }
+    .p_Contact{
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .input_Form{
+        width: 80%;
+        height: 30px;
+        font-size: 14px;
+    }
+    .label_Form{
+        font-size: 14px;
+    }
+    .input_Form::placeholder{
+        font-size: 12px;
+    }
+    .map_Contact{
+        margin-top: 25px;
+        max-width: 100%;
+    }
+    .textarea_Form{
+        width: 80%;
+        height: 80px;
+        font-size: 12px;
+    }
+    .p_Infos{
+        font-size: 16px;
+    }
+    .infos_Icon{
+        width: 18px;
+        height: 19px;
+    }
+    .p2_Infos{
+        font-size: 12px;
+    }
+    .infos{
+        margin-left: 10px;
+    }
+    .form_Contact{
+        padding-left: 25px;
+    }
+    .submit_Form{
+        width: 110px;
+        height: 40px;
+    }
+    .intro_Contact{
+        padding-bottom: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
 
 

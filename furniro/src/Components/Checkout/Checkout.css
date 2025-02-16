@@ -24,6 +24,7 @@
   
   .form-row {
     display: flex;
+    flex-direction: row;
     gap: 10px;
   }
   
@@ -228,4 +229,85 @@ form p {
   font-weight: 300;
   font-size: 16px;
   color: #000000;
+}
+@media (max-width: 480px){
+  .checkout_Content{
+    width: 100%;
+  }
+  .billing_Details{
+    width: 60%;
+  }
+  .order_Summary{
+    width: 40%;
+    padding-right: 7px;
+    padding-left: 0;
+  }
+  .nameto_Check,.nameto_Check2{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .data_Check{
+    font-size: 12px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  textarea.textarea_Checkout{
+    width: 100%;
+    height: 80px;
+  }
+  .h1_Checkout{
+    margin-left: 0;
+    font-size: 26px;
+    padding-left: 16%;
+  }
+  form p{
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 1px;
+  }
+  
+  .order_Summary p{
+    font-size: 12px;
+
+  }
+  .rowcart_Check.header{
+    flex-direction: row;
+  }
+  .order_Summary h3{
+    font-size: 14px;
+  }
+  .form-row{
+    flex-direction: column;
+  }
+  .order_Summary label{
+    font-size: 12px;
+    padding-left: 0;
+  }
+  .textarea_Checkout{
+    width: 150px;
+    height: 80px;
+    font-size: 12px;
+  }
+  .rowcart_Check{
+    width: 100%;
+  }
+  .payment-methods{
+    width: 100%;
+    letter-spacing: 1px;
+  }
+
+
+
+
+
+
+
+
+
+
+
 }

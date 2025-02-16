@@ -194,3 +194,62 @@ a.logo_Link{
     }
 
 }
+@media (max-width: 430px){
+    .about_Nav{
+        margin-right: 20px;
+
+    }
+    .shop_Nav{
+        margin-right: 20px;
+
+    }
+    .home_Nav{
+        margin-right: 20px;
+    }
+
+}
+@media (max-width: 406px){
+    .about_Nav{
+        margin-right: 15px;
+
+    }
+    .shop_Nav{
+        margin-right: 15px;
+
+    }
+    .home_Nav{
+        margin-right: 15px;
+    }
+
+}
+@media (max-width: 400px){
+    .about_Nav{
+        margin-right: 15px;
+        font-size: 14px;
+
+    }
+    .shop_Nav{
+        margin-right: 15px;
+        font-size: 14px;
+
+    }
+    .home_Nav{
+        margin-right: 15px;
+        font-size: 14px;
+    }
+    .contact_Nav{
+        font-size: 14px;
+    }
+
+}
+@media (max-width: 379px){
+    .test{
+        flex-direction: column;
+    }
+    .shopping-cart-icon{
+        margin-left: 65px;
+        top: 124px;
+    }
+   
+
+}

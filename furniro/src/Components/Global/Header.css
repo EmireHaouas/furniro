@@ -1,47 +1,31 @@
-body{
-    margin: 0;
+a{
+    text-decoration: none;
+}
+.icons{
+    width: 28px;
+    height: 28px;
+}
+.logo_Link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .logo{
     width: 50px;
     height: 32px;
 }
-.test{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #ffffff;
-    margin-top: 10px;
-    
-}
-
-.nav_Bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-family: 'Poppins', sans-serif;
+.logo_Name{
+    font-family: 'Montserrat', sans-serif;
     color: #000000;
+    font-size: 34px;
+    margin-left: 10px;
 }
-.icons{
-    width: 28px;
-    height: 28px;
-    margin-right: 20px;
-    cursor: pointer;
-}
-.icons_Nav{
+header{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-right: 50px;
-}
-a{
-    text-decoration: none;
+    align-items: center;
+    justify-content: space-around;
 }
 a:hover {
     color: inherit;          
@@ -51,205 +35,56 @@ a:hover {
   a:active{
     transform: scale(1.1);
   }
-a.logo_Link{
+  a.logo_Link{
     color: initial;
     text-decoration: initial;
     transform: initial;
+  }
+.icons_Nav{
     display: flex;
     flex-direction: row;
-    align-items: center;
-}
-.logo_Pack{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 350px;
-    margin-left: 50px;
-    cursor: pointer;
-    transition: none;
-    
-}
+    justify-content: space-evenly;
+    width: 10%;
 
-  
+}
+.test{
+    display: flex;
+    flex-direction: row;
+}
 .home_Nav{
-    margin-right: 40px;
     font-size: 16px;
     color: #000000;
     font-weight: 500;
     font-family: 'poppins', sans-serif;
+    letter-spacing: 2px;
+
 }
 .shop_Nav{
-    margin-right: 40px;
     font-size: 16px;
     color: #000000;
     font-weight: 500;
     font-family: 'poppins', sans-serif;
+    letter-spacing: 2px;
+
 }
 .about_Nav{
-    margin-right: 40px;
     font-size: 16px;
     color: #000000;
     font-weight: 500;
     font-family: 'poppins', sans-serif;
+    letter-spacing: 2px;
+
 }
 .contact_Nav{
     font-size: 16px;
     color: #000000;
     font-weight: 500;
     font-family: 'poppins', sans-serif;
+    letter-spacing: 2px;
 }
-.logo_Name{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 34px;
-    margin-left: 10px;
-}
-.user_Icon{
-    margin-right: 20px;
-}
-.search_Icon{
-    margin-right: 20px;
-}
-.about_Icon{
-    margin-right: 20px;
-}
-.cart-icon-img{
-    margin-top: 0px;
-}
-/*@media (max-width: 835px) {
-    @media (max-width: 480px) {
-      @media  (max-width: 1195px) {*/
-
-@media (max-width: 480px){
-    .logo{
-        width: 42px;
-        height: 28px;
-    }
-    .logo_Name{
-        font-size: 16px;
-        margin-right: 15px;
-    }
-    .home_Nav{
-        margin-right: 20px;
-        font-size: 14px;
-    }
-    .shop_Nav{
-        margin-right: 20px;
-        font-size: 14px;
-    }
-    .about_Nav{
-        margin-right: 20px;
-        font-size: 14px;
-    }
-    .contact_Nav{
-        font-size: 14px;
-    }
-    .icons{
-        width: 18px;
-        height: 18px;
-        margin-right: 10px;
-        margin-left: 40px;
-        margin-top: 47px;
-    }
-    .header{
-        flex-direction:column ;
-    }
-    .test{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
-        padding-right: 40px;
-        padding-left: 20px;
-        margin-right: 10px;
-    }
-   .icons_Nav{
-    margin-right: 25px;
-   }
-    .logo_Pack{
-        margin-right: 0px;
-        margin-left: 24px;
-    }
-    .home_Nav{
-        font-size: 15px;
-        margin-right: 25px;
-    }
-    .shop_Nav{
-        font-size: 15px;
-        margin-right: 25px;
-    }
-    .about_Nav{
-        font-size: 15px;
-        margin-right: 25px;
-    }
-    .contact_Nav{
-        font-size: 15px;
-    }
-    .icons_Nav{
-        padding-bottom: 30px;
-    }
-    .shopping-cart-icon{
-        width: 24px;
-        height: 24px;
-        margin-left: 157px;
-    }
-
-}
-@media (max-width: 430px){
-    .about_Nav{
-        margin-right: 20px;
-
-    }
-    .shop_Nav{
-        margin-right: 20px;
-
-    }
-    .home_Nav{
-        margin-right: 20px;
-    }
-
-}
-@media (max-width: 406px){
-    .about_Nav{
-        margin-right: 15px;
-
-    }
-    .shop_Nav{
-        margin-right: 15px;
-
-    }
-    .home_Nav{
-        margin-right: 15px;
-    }
-
-}
-@media (max-width: 400px){
-    .about_Nav{
-        margin-right: 15px;
-        font-size: 14px;
-
-    }
-    .shop_Nav{
-        margin-right: 15px;
-        font-size: 14px;
-
-    }
-    .home_Nav{
-        margin-right: 15px;
-        font-size: 14px;
-    }
-    .contact_Nav{
-        font-size: 14px;
-    }
-
-}
-@media (max-width: 379px){
-    .test{
-        flex-direction: column;
-    }
-    .shopping-cart-icon{
-        margin-left: 65px;
-        top: 124px;
-    }
-   
-
+nav{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

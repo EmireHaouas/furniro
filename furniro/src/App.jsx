@@ -11,6 +11,7 @@ import Contact from './Components/Contact/Contact';
 import "./App.css";
 
 const App = () => {
+  
   return (
     <CartProvider>
       <Router basename="/furniro"> 

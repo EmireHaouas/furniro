@@ -10,22 +10,22 @@ a{
     z-index: 2000;
   }
   
-  /* Barre latérale (panier) */
+
   #shopping-cart {
     top: 0;
     right: 0;
-    width: 417px; /* Ajustez la largeur de la barre latérale */
-    height: 100vh; /* Prend toute la hauteur de l'écran */
-    background-color: #fff; /* Couleur de fond */
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre */
-    transform: translateX(100%); /* Cache la barre latérale par défaut */
-    transition: transform 0.3s ease-in-out; /* Animation fluide */
-    z-index: 1000; /* Assure que la barre latérale est au-dessus */
+    width: 417px; 
+    height: 100vh; 
+    background-color: #fff; 
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); 
+    transform: translateX(100%); 
+    transition: transform 0.3s ease-in-out; 
+    z-index: 1000; 
     overflow-y: auto; 
 }
 
 #shopping-cart.active {
-    transform: translateX(0); /* Affiche la barre latérale */
+    transform: translateX(0); 
     background-color: #FFFFFF;
     width: 417px;
     margin-top: 0;
@@ -35,10 +35,10 @@ a{
 }
 
   
-  /* Style du contenu de la barre latérale */
- /* #shopping-cart h3 {
-    margin: 0 0 20px;
-  }*/
+.shopping-cart-icon{
+  height: 28px;
+  width: 28px;
+}
   
   #shopping-cart ul {
     list-style: none;
@@ -51,7 +51,7 @@ a{
     overflow-y: auto; 
   }
   
-  /* Bouton pour fermer la barre */
+  
   #shopping-cart .close-btn {
     position: absolute;
     top: 10px;
@@ -62,7 +62,7 @@ a{
     cursor: pointer;
   }
   
-  /* Overlay pour fermer le panier en cliquant à l'extérieur */
+  
   #overlay {
     position: fixed;
     top: 0;
@@ -70,7 +70,7 @@ a{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9998; /* Juste en dessous du panier */
+    z-index: 9998; 
     overflow-y: auto; 
   }
 .cart-icon-image{
@@ -104,7 +104,7 @@ a{
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
-    z-index: 9999; /* Augmenter pour s'assurer que c'est au-dessus de tout */
+    z-index: 9999; 
     overflow-y: auto; 
 }
 .close_icon{
@@ -125,30 +125,30 @@ hr{
 }
 .cart_Button {
   border-radius: 50px;
-  background-color: #FFFFFF;  /* Fond blanc */
-  border: 1px solid #000000;  /* Bordure noire plus épaisse */
+  background-color: #FFFFFF;  
+  border: 1px solid #000000;  
   font-size: 12px;
   font-family: 'poppins', sans-serif;
   font-weight: 400;
-  padding: 3px 30px;  /* Plus de padding pour un bouton plus grand */
+  padding: 3px 30px;  
   cursor: pointer;
-  color: #000000;  /* Texte noir */
-  text-decoration: none;  /* Assurer qu'il n'y a pas de soulignement si c'est un lien */
-  display: inline-block; /* Pour que le lien se comporte comme un bouton */
-  transition: all 0.3s ease; /* Animation fluide pour le survol */
+  color: #000000;  
+  text-decoration: none;  
+  display: inline-block; 
+  transition: all 0.3s ease; 
 }
 .checkout_Button {
   border-radius: 50px;
-  background-color: #FFFFFF;  /* Fond blanc */
-  border: 1px solid #000000;  /* Bordure noire */
+  background-color: #FFFFFF;  
+  border: 1px solid #000000;  
   font-size: 12px;
   font-family: 'poppins', sans-serif;
   font-weight: 400;
-  padding: 3px 30px;  /* Même padding pour consistance */
+  padding: 3px 30px;  
   cursor: pointer;
-  color: #000000;  /* Texte noir */
-  text-decoration: none;  /* Pas de soulignement */
-  display: inline-block; /* Pour un affichage cohérent */
+  color: #000000; 
+  text-decoration: none;  
+  display: inline-block; 
   transition: all 0.3s ease;
 }
 .cart_Button:active{
@@ -196,7 +196,7 @@ hr{
   width: 100%;
   margin-top: 20px;
 }
-/*debut nouveau code*/
+
 .cartitem_Image{
   width: 108px;
   height: 105px;
@@ -238,6 +238,10 @@ hr{
   justify-content: space-evenly;
   align-items: center;
 }
+.cart-icon-image{
+  height: 28px;
+  width: 28px;
+}
 .priceqty_Cart{
   display: flex;
   flex-direction: row;
@@ -271,14 +275,14 @@ hr{
   color: #B88E2F;
 }
 .cart-icon-image {
-  position: sticky; /* L'icône reste fixe dans la fenêtre */
-  top: 20px; /* Ajuste la position de l'icône */
-  right: 20px; /* Ajuste la position de l'icône */
+  position: sticky; 
+  top: 20px; 
+  right: 20px; 
 }
 
 #cart-icon {
-  top: 20px; /* Maintient la position du conteneur */
-  right: 20px; /* Maintient la position du conteneur */
+  top: 20px; 
+  right: 20px; 
   position: sticky;
   top: 100px; 
 }
@@ -302,8 +306,8 @@ hr{
 .cart-item-count.large-number {
   top: -25%;
   left: 0%;
-  font-size: 20px; /* Augmente la taille du texte si le nombre dépasse 9 */
-  min-width: 25px; /* Augmente la taille du cercle */
+  font-size: 20px; 
+  min-width: 25px; 
 }
 
 @media (max-width: 480px){
@@ -341,19 +345,37 @@ hr{
     padding-bottom: 40px;
     margin-bottom: 50px;
   }
-
-  
-
-
-
-
-
-
-
-
-
+}
+@media screen and (max-width: 650px){
+  .shopping-cart-icon{
+    height: 21px;
+    width: 22px;
+  }
+  .cart-icon-image{
+    height: 22px;
+    width: 22px;
+  }
+  .cart-item-count{
+    bottom: -6.7px;
+    top: -10.3px;
+    left: -2.35px;
+    right: 0px;
+  }
 
 }
 
+@media screen and (max-width: 507px){
+  .shopping-cart-icon{
+    height: 28px;
+    width: 28px;
+  }
+  .cart-icon-image{
+    height: 28px;
+    width: 28px;
+  }
+  .cart-item-count{
+    left: 0.65px;
 
-
+  }
+  
+}

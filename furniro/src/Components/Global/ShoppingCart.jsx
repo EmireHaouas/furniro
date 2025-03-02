@@ -19,7 +19,7 @@ const ShoppingCart = () => {
 
   return (
     <div>
-      {/* Icone du panier */}
+      {console.log("rendering cart")}
       {!isCartOpen && (
         <div
           id="cart-icon"
@@ -27,7 +27,6 @@ const ShoppingCart = () => {
           className="shopping-cart-icon"
         >
           <img src={cart_Icon} alt="Cart Icon" className="cart-icon-image" />
-          {/* Affichage du compteur uniquement si le panier n'est pas vide */}
           {totalItems > 0 && (
             <span
               className={`cart-item-count ${totalItems > 9 ? "large-number" : ""}`}

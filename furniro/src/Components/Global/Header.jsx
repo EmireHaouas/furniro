@@ -8,19 +8,21 @@ import search_Icon from '../../assets/imgs/search_Icon.png';
 import ShoppingCart from './ShoppingCart';
 
 const Header = () => {
+
+
+    
     return (
         <header className="header">
            
-            
+          
                 
                 <Link to="/" className="logo_Link">
-                    
                     <img className="logo" alt="logo" src={logo} />
                     
                     <p className="logo_Name">Furniro</p>
                     </Link>
                 
-                
+              
                 <nav className="nav_Bar">
                     <Link to="/" className="home_Nav">Home</Link>
                     <Link to="/shop" className="shop_Nav">Shop</Link>
@@ -34,6 +36,7 @@ const Header = () => {
                 <img className="icons" src={heart_Icon} alt="Heart Icon" />
                 <ShoppingCart />
             </div>
+          
         </header>
     );
 };

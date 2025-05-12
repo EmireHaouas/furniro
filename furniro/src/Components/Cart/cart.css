@@ -1,188 +1,176 @@
-/* Conteneur principal du panier */
 .banner_Cart {
+  width: 100%;
+}
+
+.shoppingcart_Check {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.entire_Cart {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 20px 85px 20px;
+}
+
+.kikk {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row_Summary,
+.rowcart_Details {
+  display: grid;
+  grid-template-columns: 120px 1fr 150px 100px 150px 50px;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.row_Summary {
+  background-color: #F9F1E7;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.row_Summary p,
+.rowcart_Details > div {
+  margin: 0;
+}
+
+.cart_Productimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart_Productimage img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 5px;
+  background-color: rgba(184, 142, 47, 0.22);
+  padding: 5px;
+}
+
+.cart_Productname {
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  font-size: 16px;
+}
+
+.cart_Productprice,
+.cart_Productqty,
+.cart_Total {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.cart_Total {
+  font-weight: 700;
+}
+
+.cart_Delete {
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+}
+
+.items_Cart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rowcart_Details {
+  border-bottom: 1px solid #eee;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+}
+
+.cart_Checkout {
+  background-color: #F9F1E7;
+  padding: 20px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  max-height: 390px;
+  justify-content: space-around;
+}
+
+.h2_Stickcart {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
+.h3_Stickcart {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.checkout_Btncart {
+  border-radius: 15px;
+  border: 1px solid #000;
+  width: 222px;
+  height: 58px;
+  background-color: #F9F1E7;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+}
+
+.Warranty {
+  padding: 20px;
+  background-color: #F9F1E7;
+  margin-top: 40px;
+}
+.trashIcon{
+  width: 18px;
+  height: 18px;
+}
+
+
+@media (max-width: 1004px) {
+  .entire_Cart {
+    flex-direction: column;
+  }
+
+  .kikk {
     width: 100%;
   }
-  
-  /* Disposition de l'ensemble du panier */
-  .shoppingcart_Check {
-    display: flex;
-    flex-direction: column;
+
+  .row_Summary,
+  .rowcart_Details {
+    grid-template-columns: 80px 1fr 100px 80px 100px 40px;
+    font-size: 14px;
+  }
+
+  .cart_Checkout {
+    width: 100%;
+    min-height: 380px;
+    padding: 0;
     margin-top: 20px;
   }
-  
-  /* Div pour l'ensemble du panier */
-  .entire_Cart {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+  .cart_Productprice, .cart_Productqty, .cart_Total {
+    font-size: 13px;
   }
-  
-  /* Disposition du résumé du panier */
-  .cart_Summary {
-    width: 70%;
-  }
-  
-  /* En-tête du tableau des produits */
-  .row_Summary {
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 0px;
-    padding-left: 259px;
-    width: 1069px;
-    
-    gap: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #000;
-    background-color: #F9F1E7;
-    padding: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .row_Summary p {
-    margin: 0;
-    width: 100%;
-  }
-  
-  /* Conteneur des produits dans le panier */
-  .items_Cart {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Disposition de chaque ligne de produit */
-  .rowcart_Details {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
-    gap: 10px;
-    width: 100%;
-  }
-  .kikk{
-    display: flex;
-  flex-direction: column;
-  align-items: normal;
-  width: 70%;
-  }
-  
-  .cart_Productimage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image_Cart {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    border-radius: 5px;
-    background-color: rgba(184, 142, 47, 0.22);
-    padding: 5px;
-  }
-  
-  /* Nom du produit */
+
   .cart_Productname {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000;
-    text-align: center;
+    font-size: 0;
   }
-  
-  /* Prix, quantité et total du produit */
-  .cart_Productprice {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000;
-    text-align: start;
-    margin-right: 185px;
-  }
-  .cart_Productqty{
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000;
-    text-align: center;
-
-  }
-  .cart_Total{
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000;
-    text-align: center;
-
-  }
-  .p_Qty{
-  width: 10%;
-  margin-left: 150px;
-  }
-.p_Pprice{
-    margin-left: 52px;
-    width: 10%;
 }
-.p_Subtot{
-    margin-left: 30px;
-    width: 10%;
-}
-.p_Prod{
-    width: 10%;
-    margin-left: 48px;
-}
-
-
-
-  
-  /* Section de paiement et du total */
-  .cart_Checkout {
-    background-color: #F9F1E7;
-    padding: 20px;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    margin-top: 30px;
-  }
-  
-  .h2_Stickcart {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 10px;
-  }
-  
-  .h3_Stickcart {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 20px;
-  }
-  
-  .checkout_Btncart {
-    width: 100%;
-    height: 50px;
-    background-color: #F9F1E7;
-    border: 1px solid #000;
-    border-radius: 15px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: #000;
-    cursor: pointer;
-  }
-  
-  /* Garantie */
-  .Warranty {
-    padding: 20px;
-    background-color: #F9F1E7;
-    margin-top: 40px;
-  }
-  

@@ -1,4 +1,4 @@
-/* Conteneur principal */
+
 .checkout_Container {
     padding: 0px;
   }
@@ -14,7 +14,7 @@
     padding-bottom: 70px;
   }
   
-  /* Détails de facturation */
+
   .billing_Details {
     display: flex;
     flex-direction: column;
@@ -27,8 +27,7 @@
     flex-direction: row;
     gap: 10px;
   }
-  
-  /* Résumé de commande */
+
   .order_Summary {
     flex: 1;
     background: #fff;
@@ -60,7 +59,7 @@
     text-align: right;
   }
   
-  /* Méthodes de paiement */
+
   .payment-methods {
     margin-top: 20px;
   }
@@ -178,9 +177,9 @@ form p {
   color: #000000;
 }
 .textarea_Checkout:focus, .data_Check:focus, .nameto_Check:focus, .nameto_Check2:focus{
-  outline: none;  /* Enlève la bordure de focus par défaut */
-  border: 2px solid #D9B26B;  /* Exemple : ajoute une bordure verte */
-  box-shadow: 0 0 5px #D9B26B; /* Ajoute une ombre autour de l'élément */
+  outline: none;
+  border: 2px solid #D9B26B;
+  box-shadow: 0 0 5px #D9B26B;
 }
 .p_Checkcolum{
   font-family: 'poppins', sans-serif;

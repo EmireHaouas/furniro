@@ -114,13 +114,18 @@
 }
 
 .h3_Stickcart {
+  color: #B88E2F;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 600;
-  color: #000;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
-
+.spanH3_Stickcart{
+  color: #000000;
+}
 .checkout_Btncart {
   border-radius: 15px;
   border: 1px solid #000;

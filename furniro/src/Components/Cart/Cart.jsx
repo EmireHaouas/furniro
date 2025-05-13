@@ -51,7 +51,7 @@ const Cart = () => {
                     <div className="cart_Checkout">
                         <h2 className="h2_Stickcart">Cart Totals</h2>
                         <h3 className="h3_Stickcart">
-                            <span>Total: </span>$
+                            <span className='spanH3_Stickcart'>Total: </span>$
                             {cart
                                 .reduce((acc, item) => acc + item.price * item.quantity, 0)
                                 .toFixed(2)}

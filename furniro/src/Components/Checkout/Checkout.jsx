@@ -2,34 +2,36 @@ import React from "react";
 import "./Checkout.css";
 import bannercheckout from "../../assets/imgs/bannercheckout.webp";
 import Warranty from "../Global/Warranty";
-import { useCart } from "../Global/Cartcontext"; // Importer le contexte
+import { useCart } from "../Global/Cartcontext";
 import Countries from '../../Data/Countries';
+import { Link } from "react-router-dom";
+
 
 const Checkout = () => {
-  const { cart } = useCart(); // Récupérer les produits du panier
+  const { cart } = useCart();
 
-  // Vérifie si le panier est vide
+
   if (cart.length === 0) {
     return <h2>Your cart is empty</h2>;
   }
-  // Calculer le total de la commande
+
   const totalAmount = cart.reduce((total, item) => total + item.price * item.quantity, 0);
 
 
   return (
     <div className="checkout_Container">
-      {/* Bannière */}
+
       <img
         src={bannercheckout}
         alt="bannercheckout"
         className="bannercheckout"
       />
 
-      {/* Détails de facturation */}
+
       
       <div className="checkout_Content">
  
-        {/* Formulaire de facturation */}
+
         <div className="billing_Details">
         <h1 className="h1_Checkout">Billing details</h1>
           <form>
@@ -86,7 +88,7 @@ const Checkout = () => {
           </form>
         </div>
 
-        {/* Résumé de la commande */}
+
         <div className="order_Summary">
           
           <div className="items_Cart">
@@ -114,13 +116,13 @@ const Checkout = () => {
               
             ))}
           </div>
-          {/* Affichage du total de la commande */}
+
           <div className="ordertotal_Check">
             <h3 className="h3_Totalcheck">Total</h3>
-            <p className="totalamount_Check">${totalAmount.toFixed(2)}</p> {/* Affichage du total */}
+            <p className="totalamount_Check">${totalAmount.toFixed(2)}</p>
           </div>
 
-          {/* Méthodes de paiement */}
+
           <div className="payment-methods">
             <h3>Payment Methods</h3>
             <label>
@@ -135,7 +137,9 @@ const Checkout = () => {
               <input type="radio" name="payment" />
               Cash On Delivery
             </label>
-            <button className="place-order">Place Order</button>
+            <Link to="/payment">
+              <button className="place-order">Proceed to Payment</button>
+            </Link>
           </div>
         </div>
       </div>

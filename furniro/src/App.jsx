@@ -8,6 +8,7 @@ import ProductDetail from "./Components/Global/ProductDetail";
 import Cart from "./Components/Cart/Cart";
 import Checkout from "./Components/Checkout/Checkout";
 import Contact from './Components/Contact/Contact';
+import Payment from "./Components/Payment/Payment.jsx";
 import "./App.css";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path='/payment' element={<Payment />} />
         </Routes>
         <Footer />
       </Router>

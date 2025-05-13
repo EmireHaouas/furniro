@@ -1,28 +1,37 @@
 import React, { useEffect, useState } from "react";
-import { Elements, CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
+import {
+    Elements,
+    CardElement,
+    useStripe,
+    useElements,
+} from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
-import "./Payment.css"; // Crée ce fichier si tu veux styliser
+import "./Payment.css";
 import { useCart } from "../Global/Cartcontext";
+import { useNavigate } from "react-router-dom";
 
-// Remplace par TA clé publique Stripe
-const stripePromise = loadStripe("pk_test_51QtRmcQTJeQQ3mJDSk0mQn16RR65B3TySZGLHZxmJWKFcHC2uNH4SmRq3w5szdjZUufyVFNY1W0dZ8X05nrrAtIe00PFUJ5DhW");
+const stripePromise = loadStripe(
+    "pk_test_51QtRmcQTJeQQ3mJDSk0mQn16RR65B3TySZGLHZxmJWKFcHC2uNH4SmRq3w5szdjZUufyVFNY1W0dZ8X05nrrAtIe00PFUJ5DhW"
+);
 
 const PaymentForm = ({ totalAmount }) => {
     const stripe = useStripe();
     const elements = useElements();
     const [clientSecret, setClientSecret] = useState("");
     const [paymentStatus, setPaymentStatus] = useState("");
+    const navigate = useNavigate();
 
-    // Appel au backend pour créer le PaymentIntent dès que la page charge
     useEffect(() => {
         fetch("http://localhost:4242/create-payment-intent", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ amount: totalAmount * 100 }), // Stripe attend les centimes
+            body: JSON.stringify({ amount: totalAmount * 100 }),
         })
             .then((res) => res.json())
             .then((data) => setClientSecret(data.clientSecret))
-            .catch((error) => console.error("Erreur de création du PaymentIntent :", error));
+            .catch((error) =>
+                console.error("Erreur de création du PaymentIntent :", error)
+            );
     }, [totalAmount]);
 
     const handleSubmit = async (e) => {
@@ -41,14 +50,28 @@ const PaymentForm = ({ totalAmount }) => {
         } else {
             if (result.paymentIntent.status === "succeeded") {
                 setPaymentStatus("✅ Payment successful!");
-                // Optionnel : rediriger vers une page de confirmation
-                // navigate("/success");
+                setTimeout(() => {
+                    navigate("/success");
+                }, 2000);
             }
         }
     };
 
     return (
         <form onSubmit={handleSubmit}>
+            <div className="payment-warning">
+                <p>
+                    🚨 <strong>Demo Mode:</strong> This is a demo application. Payments
+                    are processed using Stripe's <strong>TEST mode</strong>. Use Stripe
+                    test cards only. No real transactions will be made.
+                </p>
+                <p>
+                    Example test card: <strong>4242 4242 4242 4242</strong>
+                    <br />
+                    Exp: <strong>Any future date</strong> | CVC:{" "}
+                    <strong>Any 3 digits</strong> | ZIP: <strong>Any</strong>
+                </p>
+            </div>
             <CardElement />
             <button type="submit" disabled={!stripe || !clientSecret}>
                 Pay Now
@@ -65,7 +88,10 @@ const Payment = () => {
         return <h2>Your cart is empty</h2>;
     }
 
-    const totalAmount = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+    const totalAmount = cart.reduce(
+        (acc, item) => acc + item.price * item.quantity,
+        0
+    );
 
     return (
         <div className="payment-container">

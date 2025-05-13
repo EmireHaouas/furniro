@@ -3,150 +3,142 @@ import "./Checkout.css";
 import bannercheckout from "../../assets/imgs/bannercheckout.webp";
 import Warranty from "../Global/Warranty";
 import { useCart } from "../Global/Cartcontext";
-import Countries from '../../Data/Countries';
+import Countries from "../../Data/Countries";
 import { Link } from "react-router-dom";
-
 
 const Checkout = () => {
   const { cart } = useCart();
-
 
   if (cart.length === 0) {
     return <h2>Your cart is empty</h2>;
   }
 
-  const totalAmount = cart.reduce((total, item) => total + item.price * item.quantity, 0);
-
+  const totalAmount = cart.reduce(
+      (total, item) => total + item.price * item.quantity,
+      0
+  );
 
   return (
-    <div className="checkout_Container">
+      <div className="checkout_Container">
+        <img
+            src={bannercheckout}
+            alt="bannercheckout"
+            className="bannercheckout"
+        />
 
-      <img
-        src={bannercheckout}
-        alt="bannercheckout"
-        className="bannercheckout"
-      />
-
-
-      
-      <div className="checkout_Content">
- 
-
-        <div className="billing_Details">
-        <h1 className="h1_Checkout">Billing details</h1>
-          <form>
-            <div className="form-row">
-              <div className="firstname_Check">
-              <p>First Name</p>
-              <input className="nameto_Check" type="text" required/>
+        <div className="checkout_Content">
+          <div className="billing_Details">
+            <h1 className="h1_Checkout">Billing details</h1>
+            <form>
+              <div className="form-row">
+                <div className="firstname_Check">
+                  <p>First Name</p>
+                  <input className="nameto_Check" type="text" required />
+                </div>
+                <div className="lastname_Check">
+                  <p>Last Name</p>
+                  <input className="nameto_Check2" type="text" required />
+                </div>
               </div>
-              <div className="lastname_Check">
-                <p>Last Name</p>
-              <input className="nameto_Check2" type="text"  required/>
+              <div className="companyname_Check">
+                <p>Company Name (Optional)</p>
+                <input className="data_Check" type="text" />
               </div>
-            </div>
-            <div className="companyname_Check">
-              <p>Company Name (Optional)</p>
-            <input className="data_Check" type="text" />
-            </div>
-            <div className="country_Check">
-            <p>Country / Region</p>
-            <select className="data_Check" required>
-              <option>Japan</option>
-              {Countries.map((country, index) => (
-                <option key={index}>{country}</option>
-              ))}
-            </select>
-            </div>
-            <div className="streetadress_Check">
-              <p>Street Adress</p>
-            <input className="data_Check" type="text"  required/>
-            </div>
-            <div className="city_Check">
-              <p>Town / City</p>
-            <input  className="data_Check" type="text"  required/>
-            </div>
-            
-            <div className="province_Check">
-              <p>Province (Optional)</p>
-            <input  className="data_Check" type="text" />
-            </div>
-            <div className="zipcode_Check">
-              <p>ZIP Code</p>
-            <input className="data_Check" type="text"  required/>
-            </div>
-            <div className="phone_Check">
-              <p>Phone</p>
-            <input className="data_Check" type="text" required/>
-            </div>
-            <div className="email_Check">
-              <p>Email Address</p>
-            <input className="data_Check" type="email" required/>
-            </div>
-            
-            <textarea className="textarea_Checkout" placeholder="Additional Information"></textarea>
-          </form>
-        </div>
-
-
-        <div className="order_Summary">
-          
-          <div className="items_Cart">
-            <div className="rowcart_Check header">
-              <div className="column_Check">
-                <p className="p_Checkcolum">Product</p>
+              <div className="country_Check">
+                <p>Country / Region</p>
+                <select className="data_Check" required>
+                  <option>Japan</option>
+                  {Countries.map((country, index) => (
+                      <option key={index}>{country}</option>
+                  ))}
+                </select>
               </div>
-              <div className="column_Check2">
-                <p className="p_Checkcolum2">Subtotal</p>
+              <div className="streetadress_Check">
+                <p>Street Adress</p>
+                <input className="data_Check" type="text" required />
               </div>
-            </div>
+              <div className="city_Check">
+                <p>Town / City</p>
+                <input className="data_Check" type="text" required />
+              </div>
 
-            {cart.map((item) => (
-              <div key={item.id} className="rowcart_Check">
+              <div className="province_Check">
+                <p>Province (Optional)</p>
+                <input className="data_Check" type="text" />
+              </div>
+              <div className="zipcode_Check">
+                <p>ZIP Code</p>
+                <input className="data_Check" type="text" required />
+              </div>
+              <div className="phone_Check">
+                <p>Phone</p>
+                <input className="data_Check" type="text" required />
+              </div>
+              <div className="email_Check">
+                <p>Email Address</p>
+                <input className="data_Check" type="email" required />
+              </div>
+
+              <textarea
+                  className="textarea_Checkout"
+                  placeholder="Additional Information"
+              ></textarea>
+            </form>
+          </div>
+
+          <div className="order_Summary">
+            <div className="items_Cart">
+              <div className="rowcart_Check header">
                 <div className="column_Check">
-                  <h3 className="check_Productname">{item.name}</h3>
-                  <p className="check_Productqty">x{item.quantity}</p>
+                  <p className="p_Checkcolum">Product</p>
                 </div>
                 <div className="column_Check2">
-                  <p className="check_Productprice">${item.price}</p>
-                  <p className="cart_Totdal">${item.price * item.quantity}</p>
+                  <p className="p_Checkcolum2">Subtotal</p>
                 </div>
-               
               </div>
-              
-            ))}
-          </div>
 
-          <div className="ordertotal_Check">
-            <h3 className="h3_Totalcheck">Total</h3>
-            <p className="totalamount_Check">${totalAmount.toFixed(2)}</p>
-          </div>
+              {cart.map((item) => (
+                  <div key={item.id} className="rowcart_Check">
+                    <div className="column_Check">
+                      <h3 className="check_Productname">{item.name}</h3>
+                      <p className="check_Productqty">x{item.quantity}</p>
+                    </div>
+                    <div className="column_Check2">
+                      <p className="check_Productprice">${item.price}</p>
+                      <p className="cart_Totdal">${item.price * item.quantity}</p>
+                    </div>
+                  </div>
+              ))}
+            </div>
 
+            <div className="ordertotal_Check">
+              <h3 className="h3_Totalcheck">Total</h3>
+              <p className="totalamount_Check">${totalAmount.toFixed(2)}</p>
+            </div>
 
-          <div className="payment-methods">
-            <h3>Payment Methods</h3>
-            <label>
-              <input type="radio" name="payment" />
-              Credit Card
-            </label>
-            <label>
-              <input type="radio" name="payment" />
-              Direct Bank Transfer
-            </label>
-            <label>
-              <input type="radio" name="payment" />
-              Cash On Delivery
-            </label>
-            <Link to="/payment">
-              <button className="place-order">Proceed to Payment</button>
-            </Link>
+            <div className="payment-methods">
+              <h3>Payment Methods</h3>
+              <label>
+                <input type="radio" name="payment" />
+                Credit Card
+              </label>
+              <label>
+                <input type="radio" name="payment" />
+                Direct Bank Transfer
+              </label>
+              <label>
+                <input type="radio" name="payment" />
+                Cash On Delivery
+              </label>
+              <Link to="/payment">
+                <button className="place-order">Proceed to Payment</button>
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
 
-     
-      <Warranty />
-    </div>
+        <Warranty />
+      </div>
   );
 };
 

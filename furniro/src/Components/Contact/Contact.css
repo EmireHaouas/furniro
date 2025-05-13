@@ -1,72 +1,69 @@
-.banner_Contact{
+.banner_Contact {
     width: 100%;
 }
-.title_Contact{
-    font-family: 'poppins', sans-serif;
+.title_Contact {
+    font-family: "poppins", sans-serif;
     font-size: 36px;
     color: #000000;
     font-weight: 600;
     margin-bottom: 10px;
     margin-top: 60px;
 }
-.p_Contact{
-    font-family: 'poppins', sans-serif;
+.p_Contact {
+    font-family: "poppins", sans-serif;
     font-size: 16px;
-    color: #9F9F9F;
+    color: #9f9f9f;
     font-weight: 400;
     margin-top: 0;
 }
-.intro_Contact{
+.intro_Contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.infos_Icon{
+.infos_Icon {
     height: 22px;
     width: 22px;
-
 }
-.icon_Row{
+.icon_Row {
     display: flex;
     flex-direction: row;
 }
-.sub_Infos{
+.sub_Infos {
     display: flex;
     flex-direction: column;
 }
-.infos{
+.infos {
     display: flex;
     flex-direction: column;
     margin-left: 50px;
 }
-.p_Infos{
-    font-family: 'poppins', sans-serif;
+.p_Infos {
+    font-family: "poppins", sans-serif;
     font-size: 24px;
     font-weight: 500;
     color: #000000;
     margin-bottom: 0;
-
 }
-.p2_Infos{
-    font-family: 'poppins', sans-serif;
+.p2_Infos {
+    font-family: "poppins", sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #000000;
     margin-top: 0;
     margin-left: 20px;
     margin-bottom: 60px;
-
 }
-.infoss{
+.infoss {
     display: flex;
     flex-direction: column;
 }
-.text_Contact{
+.text_Contact {
     display: flex;
     flex-direction: column;
 }
-.map_Contact{
+.map_Contact {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -74,139 +71,127 @@
     margin-bottom: 50px;
     padding-bottom: 20px;
 }
-.submit_Form{
-    background-color: #B88E2F;
-    color: #FFFFFF;
+.submit_Form {
+    background-color: #b88e2f;
+    color: #ffffff;
     width: 237px;
     height: 55px;
-    font-family: 'poppins', sans-serif;
+    font-family: "poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-.label_Form{
-    font-family: 'poppins', sans-serif;
+.label_Form {
+    font-family: "poppins", sans-serif;
     font-size: 16px;
     color: #000000;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.input_Form{
+.input_Form {
     width: 528.75px;
     height: 75px;
     border-radius: 10px;
-    border-color: #9F9F9F;
+    border-color: #9f9f9f;
     border-width: 1px;
     margin-bottom: 30px;
-    font-family: 'poppins', sans-serif;
+    font-family: "poppins", sans-serif;
     font-size: 16px;
-    color: #9F9F9F;
+    color: #9f9f9f;
     font-weight: 400;
-
 }
-.textarea_Form{
+.textarea_Form {
     width: 527px;
     height: 120px;
     resize: none;
     border-radius: 10px;
-    border-color: #9F9F9F;
+    border-color: #9f9f9f;
     border-width: 1px;
     margin-bottom: 30px;
-    font-family: 'poppins', sans-serif;
+    font-family: "poppins", sans-serif;
     font-size: 16px;
-    color: #9F9F9F;
+    color: #9f9f9f;
     font-weight: 400;
 }
-.form_Group{
+.form_Group {
     display: flex;
     flex-direction: column;
 }
-.form_Contact{
+.form_Contact {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
 }
-.input_Form::placeholder{ 
-    font-family: 'poppins', sans-serif;
+.input_Form::placeholder {
+    font-family: "poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #9F9F9F;
+    color: #9f9f9f;
 }
-.textarea_Form::placeholder{
-    font-family: 'poppins', sans-serif;
+.textarea_Form::placeholder {
+    font-family: "poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #9F9F9F;
+    color: #9f9f9f;
 }
-.input_Form:focus, .textarea_Form:focus {
-    outline: none;  /* Enlève la bordure de focus par défaut */
-    border: 2px solid #D9B26B;  /* Exemple : ajoute une bordure verte */
-    box-shadow: 0 0 5px #D9B26B; /* Ajoute une ombre autour de l'élément */
+.input_Form:focus,
+.textarea_Form:focus {
+    outline: none; /* Enlève la bordure de focus par défaut */
+    border: 2px solid #d9b26b; /* Exemple : ajoute une bordure verte */
+    box-shadow: 0 0 5px #d9b26b; /* Ajoute une ombre autour de l'élément */
 }
-@media (max-width: 480px){
-    .title_Contact{
+@media (max-width: 480px) {
+    .title_Contact {
         font-size: 31px;
     }
-    .p_Contact{
+    .p_Contact {
         font-size: 14px;
         padding-left: 10px;
         padding-right: 10px;
     }
-    .input_Form{
+    .input_Form {
         width: 80%;
         height: 30px;
         font-size: 14px;
     }
-    .label_Form{
+    .label_Form {
         font-size: 14px;
     }
-    .input_Form::placeholder{
+    .input_Form::placeholder {
         font-size: 12px;
     }
-    .map_Contact{
+    .map_Contact {
         margin-top: 25px;
         max-width: 100%;
     }
-    .textarea_Form{
+    .textarea_Form {
         width: 80%;
         height: 80px;
         font-size: 12px;
     }
-    .p_Infos{
+    .p_Infos {
         font-size: 16px;
     }
-    .infos_Icon{
+    .infos_Icon {
         width: 18px;
         height: 19px;
     }
-    .p2_Infos{
+    .p2_Infos {
         font-size: 12px;
     }
-    .infos{
+    .infos {
         margin-left: 10px;
     }
-    .form_Contact{
+    .form_Contact {
         padding-left: 25px;
     }
-    .submit_Form{
+    .submit_Form {
         width: 110px;
         height: 40px;
     }
-    .intro_Contact{
+    .intro_Contact {
         padding-bottom: 30px;
     }
-
-
-
-
-
-
-
-
-
-
 }
-
-

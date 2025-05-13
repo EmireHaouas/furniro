@@ -21,7 +21,7 @@ form {
     gap: 20px;
 }
 
-button {
+.payment_Btn {
     background-color: #000;
     color: #fff;
     border: none;
@@ -48,7 +48,7 @@ button:hover:enabled {
     background-color: #fff;
 }
 
-p {
+.payment-warning-textp {
     text-align: center;
     font-weight: 600;
     font-size: 16px;

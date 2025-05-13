@@ -68,12 +68,16 @@
 
 .place-order {
   display: inline-block;
-  background: #007bff;
-  color: #fff;
-  border: none;
+  color: #000;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   padding: 10px 20px;
-  border-radius: 5px;
   cursor: pointer;
+  border-radius: 15px;
+  border: 1px solid #000;
 }
 
 .place-order:hover {
@@ -111,7 +115,7 @@
   font-weight: 400;
   color: #000000;
 }
-form {
+.checkout_form {
   display: flex;
   flex-direction: column;
 }
@@ -167,7 +171,7 @@ form {
   flex-direction: column;
   align-items: flex-start;
 }
-form p {
+.checkout_form p {
   font-family: "poppins", sans-serif;
   font-weight: 500;
   color: #000000;
@@ -231,12 +235,17 @@ form p {
 @media (max-width: 480px) {
   .checkout_Content {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
   .billing_Details {
     width: 60%;
   }
+  .checkout_form{
+    gap: 0;
+  }
   .order_Summary {
-    width: 40%;
+    width: 70%;
     padding-right: 7px;
     padding-left: 0;
   }
@@ -263,8 +272,8 @@ form p {
     font-size: 26px;
     padding-left: 16%;
   }
-  form p {
-    font-size: 12px;
+  .checkout_form p {
+    font-size: 14px;
     margin-top: 8px;
     margin-bottom: 1px;
   }

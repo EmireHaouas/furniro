@@ -22,7 +22,7 @@ const PaymentForm = ({ totalAmount }) => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch("http://localhost:4242/create-payment-intent", {
+        fetch("https://furniro-ng8e.onrender.com/create-payment-intent", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ amount: totalAmount * 100 }),
@@ -60,12 +60,12 @@ const PaymentForm = ({ totalAmount }) => {
     return (
         <form onSubmit={handleSubmit}>
             <div className="payment-warning">
-                <p>
+                <p className='payment-warning-text'>
                     🚨 <strong>Demo Mode:</strong> This is a demo application. Payments
                     are processed using Stripe's <strong>TEST mode</strong>. Use Stripe
                     test cards only. No real transactions will be made.
                 </p>
-                <p>
+                <p className='payment-warning-text'>
                     Example test card: <strong>4242 4242 4242 4242</strong>
                     <br />
                     Exp: <strong>Any future date</strong> | CVC:{" "}
@@ -73,7 +73,7 @@ const PaymentForm = ({ totalAmount }) => {
                 </p>
             </div>
             <CardElement />
-            <button type="submit" disabled={!stripe || !clientSecret}>
+            <button className='payment_Btn' type="submit" disabled={!stripe || !clientSecret}>
                 Pay Now
             </button>
             {paymentStatus && <p>{paymentStatus}</p>}

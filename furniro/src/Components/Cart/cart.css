@@ -1,0 +1,181 @@
+.banner_Cart {
+  width: 100%;
+}
+
+.shoppingcart_Check {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.entire_Cart {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 20px 85px 20px;
+}
+
+.kikk {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row_Summary,
+.rowcart_Details {
+  display: grid;
+  grid-template-columns: 120px 1fr 150px 100px 150px 50px;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.row_Summary {
+  background-color: #F9F1E7;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.row_Summary p,
+.rowcart_Details > div {
+  margin: 0;
+}
+
+.cart_Productimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart_Productimage img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 5px;
+  background-color: rgba(184, 142, 47, 0.22);
+  padding: 5px;
+}
+
+.cart_Productname {
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  font-size: 16px;
+}
+
+.cart_Productprice,
+.cart_Productqty,
+.cart_Total {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.cart_Total {
+  font-weight: 700;
+}
+
+.cart_Delete {
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+}
+
+.items_Cart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rowcart_Details {
+  border-bottom: 1px solid #eee;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+}
+
+.cart_Checkout {
+  background-color: #F9F1E7;
+  padding: 20px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  max-height: 390px;
+  justify-content: space-around;
+}
+
+.h2_Stickcart {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
+.h3_Stickcart {
+  color: #B88E2F;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.spanH3_Stickcart{
+  color: #000000;
+}
+.checkout_Btncart {
+  border-radius: 15px;
+  border: 1px solid #000;
+  width: 222px;
+  height: 58px;
+  background-color: #F9F1E7;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+}
+
+.Warranty {
+  padding: 20px;
+  background-color: #F9F1E7;
+  margin-top: 40px;
+}
+.trashIcon{
+  width: 18px;
+  height: 18px;
+}
+
+
+@media (max-width: 1004px) {
+  .entire_Cart {
+    flex-direction: column;
+  }
+
+  .kikk {
+    width: 100%;
+  }
+
+  .row_Summary,
+  .rowcart_Details {
+    grid-template-columns: 80px 1fr 100px 80px 100px 40px;
+    font-size: 14px;
+  }
+
+  .cart_Checkout {
+    width: 100%;
+    min-height: 380px;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .cart_Productprice, .cart_Productqty, .cart_Total {
+    font-size: 13px;
+  }
+
+  .cart_Productname {
+    font-size: 0;
+  }
+}

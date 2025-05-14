@@ -1,13 +1,14 @@
-.increase_Qty, .decrease_Qty {
+.increase_Qty,
+.decrease_Qty {
     border: none;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     font-size: 16px;
     cursor: pointer;
     padding: 5px;
 }
-.qty{
-    font-family: 'poppins', sans-serif;
-    border: 1px solid #9F9F9F;
+.qty {
+    font-family: "poppins", sans-serif;
+    border: 1px solid #9f9f9f;
     border-radius: 5px;
     width: 123px;
     height: 64px;
@@ -16,6 +17,7 @@
     justify-content: space-around;
     align-items: center;
 }
-.increase_Qty:active, .decrease_Qty:active {
+.increase_Qty:active,
+.decrease_Qty:active {
     transform: scale(1.5);
 }

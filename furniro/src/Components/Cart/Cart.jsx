@@ -40,9 +40,9 @@ const Cart = () => {
                                     <div className="cart_Total">
                                         ${(item.price * item.quantity).toFixed(2)}
                                     </div>
-                                    <div className="cart_Delete" onClick={() => removeFromCart(item.id)}>
+                                    <button className="cart_Delete" onClick={() => removeFromCart(item.id)} aria-label="Remove item from cart">
                                         <img className='trashIcon' src={trashIcon} alt="trash" />
-                                    </div>
+                                    </button>
                                 </div>
                             ))}
                         </div>

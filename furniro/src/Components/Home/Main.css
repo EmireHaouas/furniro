@@ -1,5 +1,5 @@
-.banner{
-    background-image: url('../../assets//imgs/background_banner.webp');
+.banner {
+    background-image: url("../../assets//imgs/background_banner.webp");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -8,185 +8,178 @@
     align-items: center;
     justify-content: flex-end;
 }
-.banner_Img{
+.banner_Img {
     width: 100%;
-
 }
-.stick{
-    background-color: #FFF3E3;
+.stick {
+    background-color: #fff3e3;
     padding: 30px 70px 30px 70px;
     border-radius: 10px;
     margin-right: 80px;
     margin-top: 80px;
 }
-.h1_Stick{
-    font-family: 'Poppins', sans-serif;
+.h1_Stick {
+    font-family: "Poppins", sans-serif;
     font-size: 52px;
     font-weight: 700;
-    color: #B88E2F;
+    color: #b88e2f;
     line-height: 65px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.p_Stick{
-    font-family: 'poppins', sans-serif;
+.p_Stick {
+    font-family: "poppins", sans-serif;
     font-size: 16px;
     letter-spacing: 3px;
     font-weight: 600;
 }
-.p_Stick2{
-    font-family: 'Poppins', sans-serif;
+.p_Stick2 {
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 500;
 }
-.stick_Button{
-    font-family: 'Poppins', sans-serif;
+.stick_Button {
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: #FFFFFF;
-    background-color: #B88E2F;
+    color: #ffffff;
+    background-color: #b88e2f;
     border: 0;
     width: 222px;
     height: 74px;
     margin-top: 20px;
 }
-.stick_Button:hover{
+.stick_Button:hover {
     cursor: pointer;
 }
-.stick_Button:active{
+.stick_Button:active {
     transform: scale3d(0.9, 0.9, 0.9);
 }
-.dining_Img{
+.dining_Img {
     width: 381px;
     height: 480px;
 }
-.bedroom_Img{
+.bedroom_Img {
     width: 381px;
     height: 480px;
 }
-.living_Img{
+.living_Img {
     width: 381px;
     height: 480px;
 }
-.living_Img:hover{ 
+.living_Img:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.bedroom{
+.bedroom {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.living{
+.living {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.dining{
+.dining {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.imgs{
+.imgs {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.h2_Browse{
-    font-family: 'Poppins', sans-serif;
+.h2_Browse {
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 0;
 }
-.p_Browse{
-    font-family: 'Poppins', sans-serif;
+.p_Browse {
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 50px;
 }
-.title_Browse{
+.title_Browse {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.browse{
+.browse {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
 }
-.p_Dining, .p_Living, .p_Bedroom{
-    font-family: 'Poppins', sans-serif;
+.p_Dining,
+.p_Living,
+.p_Bedroom {
+    font-family: "Poppins", sans-serif;
     font-size: 24px;
     font-weight: 600;
 }
-.products{
+.products {
     display: flex;
     flex-direction: column;
 }
-.row1_Products{
+.row1_Products {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;margin-bottom: 40px;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
 }
-.row2_Products{
+.row2_Products {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 30px;
 }
-.syltherine_Img{
+.syltherine_Img {
     width: 285px;
     height: 301px;
-
-
 }
-.leviosa_Img{
+.leviosa_Img {
     width: 285px;
     height: 301px;
-
 }
-.lolito_Img{
+.lolito_Img {
     width: 285px;
     height: 301px;
-
 }
-.respira_Img{
+.respira_Img {
     width: 285px;
     height: 301px;
-
 }
-.zephyr_Img{
+.zephyr_Img {
     width: 285px;
     height: 301px;
-
 }
-.astra_Img{
+.astra_Img {
     width: 285px;
     height: 301px;
-
 }
-.pinkgy_Img{
+.pinkgy_Img {
     width: 285px;
     height: 301px;
-
 }
-.potty_Img{
+.potty_Img {
     width: 285px;
     height: 301px;
-
 }
 .quick_Add {
-    visibility: hidden;  /* Masqué par défaut */
-    opacity: 0;          /* Masqué par défaut */
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transition fluide */
-    margin-top: auto;     /* Aligne le bouton au bas */
-    width: 100%;          /* Occupe toute la largeur du conteneur */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin-top: auto;
+    width: 100%;
     text-align: center;
     padding: 10px;
 }
 .slytherine_Product {
-    background-color: #F4F5F7;
+    background-color: #f4f5f7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -195,99 +188,99 @@
     transition: background-color 0.3s ease;
 }
 .slytherine_Product:hover .quick_Add {
-    visibility: visible; /* Affiché au survol */
-    opacity: 1;          /* Deviens opaque */
+    visibility: visible;
+    opacity: 1;
 }
 .leviosa_Product:hover .quick_Add {
-    visibility: visible; /* Affiché au survol */
-    opacity: 1;          /* Deviens opaque */
+    visibility: visible;
+    opacity: 1;
 }
 .lolito_Product:hover .quick_Add {
-    visibility: visible; /* Affiché au survol */
-    opacity: 1;          /* Deviens opaque */
+    visibility: visible;
+    opacity: 1;
 }
 .respira_Product:hover .quick_Add {
-    visibility: visible; /* Affiché au survol */
-    opacity: 1;          /* Deviens opaque */
+    visibility: visible;
+    opacity: 1;
 }
 .zephyr_Product:hover .quick_Add {
-    visibility: visible; /* Affiché au survol */
-    opacity: 1;          /* Deviens opaque */
+    visibility: visible;
+    opacity: 1;
 }
 .astra_Product:hover .quick_Add {
-    visibility: visible; /* Affiché au survol */
-    opacity: 1;          /* Deviens opaque */
+    visibility: visible;
+    opacity: 1;
 }
 .pinkgy_Product:hover .quick_Add {
-    visibility: visible; /* Affiché au survol */
-    opacity: 1;          /* Deviens opaque */
+    visibility: visible;
+    opacity: 1;
 }
 .potty_Product:hover .quick_Add {
-    visibility: visible; /* Affiché au survol */
-    opacity: 1;          /* Deviens opaque */
+    visibility: visible;
+    opacity: 1;
 }
 .velloria_Product:hover .quick_Add {
-    visibility: visible; /* Affiché au survol */
-    opacity: 1;          /* Deviens opaque */
+    visibility: visible;
+    opacity: 1;
 }
 .lunara_Product:hover .quick_Add {
-    visibility: visible; /* Affiché au survol */
-    opacity: 1;          /* Deviens opaque */
+    visibility: visible;
+    opacity: 1;
 }
 .tessera_Product:hover .quick_Add {
-    visibility: visible; /* Affiché au survol */
-    opacity: 1;          /* Deviens opaque */
+    visibility: visible;
+    opacity: 1;
 }
 .nyvora_Product:hover .quick_Add {
-    visibility: visible; /* Affiché au survol */
-    opacity: 1;          /* Deviens opaque */
+    visibility: visible;
+    opacity: 1;
 }
 .aqualis_Product:hover .quick_Add {
-    visibility: visible; /* Affiché au survol */
-    opacity: 1;          /* Deviens opaque */
+    visibility: visible;
+    opacity: 1;
 }
 .orlina_Product:hover .quick_Add {
-    visibility: visible; /* Affiché au survol */
-    opacity: 1;          /* Deviens opaque */
+    visibility: visible;
+    opacity: 1;
 }
 .mirella_Product:hover .quick_Add {
-    visibility: visible; /* Affiché au survol */
-    opacity: 1;          /* Deviens opaque */
+    visibility: visible;
+    opacity: 1;
 }
 .elira_Product:hover .quick_Add {
-    visibility: visible; /* Affiché au survol */
-    opacity: 1;          /* Deviens opaque */
+    visibility: visible;
+    opacity: 1;
 }
 
 .quickadd_Cart {
-    background-color: #FFFFFF; /* Couleur du bouton */
-    color: #B88E2F;
+    background-color: #ffffff;
+    color: #b88e2f;
     border: 1px solid #000000;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    font-family: 'popins', sans-serif;
+    font-family: "popins", sans-serif;
     font-weight: 600;
 }
 .quickadd_Cart:hover {
-    background-color: #B88E2F;
-    color: #FFFFFF;
+    background-color: #b88e2f;
+    color: #ffffff;
 }
-.quickadd_Cart:active{
+.quickadd_Cart:active {
     background-color: #000000;
-    color: #FFFFFF;
+    color: #ffffff;
     border-color: #000000;
     transform: translateY(2px);
 }
-.slytherine_Product:hover, 
-.leviosa_Product:hover, 
-.lolito_Product:hover, 
-.respira_Product:hover, 
-.zephyr_Product:hover, 
-.astra_Product:hover, 
-.pinkgy_Product:hover, 
+.slytherine_Product:hover,
+.leviosa_Product:hover,
+.lolito_Product:hover,
+.respira_Product:hover,
+.zephyr_Product:hover,
+.astra_Product:hover,
+.pinkgy_Product:hover,
 .potty_Product:hover,
 .velloria_Product:hover,
 .lunara_Product:hover,
@@ -296,21 +289,21 @@
 .aqualis_Product:hover,
 .orlina_Product:hover,
 .mirella_Product:hover,
-.elira_Product:hover{
+.elira_Product:hover {
     transform: translateY(-5px);
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: rgba(58, 58, 58, 0.3); /* Fond semi-transparent au survol */
+    background-color: rgba(58, 58, 58, 0.3);
 }
 
 .living:hover,
 .dining:hover,
-.bedroom:hover{
+.bedroom:hover {
     transform: translateX(20px);
     cursor: pointer;
 }
-.leviosa_Product{
-    background-color: #F4F5F7;
+.leviosa_Product {
+    background-color: #f4f5f7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -319,319 +312,337 @@
     overflow: hidden;
     transition: background-color 0.3s ease;
 }
-.lolito_Product{
-    background-color: #F4F5F7;
+.lolito_Product {
+    background-color: #f4f5f7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 20px;
     margin-right: 40px;
 }
-.respira_Product{
-    background-color: #F4F5F7;
+.respira_Product {
+    background-color: #f4f5f7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.zephyr_Product{
-    background-color: #F4F5F7;
+.zephyr_Product {
+    background-color: #f4f5f7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.astra_Product{
-    background-color: #F4F5F7;
+.astra_Product {
+    background-color: #f4f5f7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-right: 20px;
     margin-left: 40px;
 }
-.pinkgy_Product{
-    background-color: #F4F5F7;
+.pinkgy_Product {
+    background-color: #f4f5f7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 20px;
     margin-right: 40px;
 }
-.potty_Product{
-    background-color: #F4F5F7;
+.potty_Product {
+    background-color: #f4f5f7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.velloria_Product{
-    background-color: #F4F5F7;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 20px;
-    margin-right: 40px;
-}
-.lunara_Product{
-    background-color: #F4F5F7;
+.velloria_Product {
+    background-color: #f4f5f7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 20px;
     margin-right: 40px;
 }
-.tessera_Product{
-    background-color: #F4F5F7;
+.lunara_Product {
+    background-color: #f4f5f7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 20px;
     margin-right: 40px;
 }
-.nyvora_Product{
-    background-color: #F4F5F7;
+.tessera_Product {
+    background-color: #f4f5f7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 20px;
     margin-right: 40px;
 }
-.aqualis_Product{
-    background-color: #F4F5F7;
+.nyvora_Product {
+    background-color: #f4f5f7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 20px;
     margin-right: 40px;
 }
-.orlina_Product{
-    background-color: #F4F5F7;
+.aqualis_Product {
+    background-color: #f4f5f7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 20px;
     margin-right: 40px;
 }
-.mirella_Product{
-    background-color: #F4F5F7;
+.orlina_Product {
+    background-color: #f4f5f7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 20px;
     margin-right: 40px;
 }
-.elira_Product{
-    background-color: #F4F5F7;
+.mirella_Product {
+    background-color: #f4f5f7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 20px;
     margin-right: 40px;
 }
-.name_Product{
-    font-family: 'Poppins', sans-serif;
+.elira_Product {
+    background-color: #f4f5f7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.name_Product {
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 24px;
-    color: #3A3A3A;
+    color: #3a3a3a;
     padding-left: 20px;
 }
-.details_Product{
-    font-family: 'Poppins', sans-serif;
+.details_Product {
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #898989;
     padding-left: 20px;
 }
-.price_Product{
-    font-family: 'Poppins', sans-serif;
+.price_Product {
+    font-family: "Poppins", sans-serif;
     font-weight: 600px;
     font-size: 20px;
-    color: #3A3A3A;
+    color: #3a3a3a;
     padding-left: 20px;
 }
-.h2_Our{
-    font-family: 'Poppins', sans-serif;
+.h2_Our {
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 40px;
-    color: #3A3A3A;
+    color: #3a3a3a;
 }
-.show_More{
+.show_More {
     border: solid;
-    border-color: #B88E2F;
-    background-color: #FFFFFF;
+    border-color: #b88e2f;
+    background-color: #ffffff;
     width: 245px;
     height: 48px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
-    font-weight: 600;   
+    font-weight: 600;
     align-self: center;
     margin-top: 20px;
     margin-bottom: 50px;
 }
-.show_More:hover{
+.show_More:hover {
     cursor: pointer;
 }
-.our_Products{
+.our_Products {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
     align-items: center;
 }
-.share{
+.share {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
 }
-.h2_Share{
-    font-family: 'poppins', sans-serif;
+.h2_Share {
+    font-family: "poppins", sans-serif;
     font-weight: 600;
     font-size: 20px;
     color: #616161;
 }
-.h3_Share{
-    font-family: 'poppins', sans-serif;
+.h3_Share {
+    font-family: "poppins", sans-serif;
     font-weight: 700;
     font-size: 40px;
-    color: #3A3A3A;
+    color: #3a3a3a;
     margin-bottom: 0;
     margin-top: 0;
     color: #0ff;
 }
-.share_img{
+.share_img {
     width: 100%;
 }
-/* Styles de base */
+
 .neon-element {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
     transition: all 2s ease;
-  }
-  
-  /* Effet néon appliqué lorsque l'élément est visible */
-  .neon-element.highlight {
+}
+
+.neon-element.highlight {
     color: #0ff;
-    text-shadow: 
-      0 0 5px #0ff, 
-      0 0 10px #0ff, 
-      0 0 20px #0ff, 
-      0 0 40px #00f, 
-      0 0 60px #00f, 
-      0 0 80px #00f, 
-      0 0 100px #00f;
-      animation: neonAnimation 3s ease-out forwards; /* Animation plus lente */
-  }
-  @media (max-width: 480px){
-    .h1_Stick{
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #00f,
+    0 0 60px #00f, 0 0 80px #00f, 0 0 100px #00f;
+    animation: neonAnimation 3s ease-out forwards;
+}
+@media (max-width: 480px) {
+    .h1_Stick {
         font-size: 38px;
         line-height: 37px;
     }
-    .p_Stick2{
+    .p_Stick2 {
         font-size: 14px;
         line-height: 20px;
     }
-    .stick_Button{
+    .stick_Button {
         width: 160px;
         height: 48px;
     }
-    .stick{
+    .stick {
         margin-top: 0;
         margin-left: 30px;
         padding-right: 15px;
         padding-left: 15px;
     }
-    .h1_stick{
+    .h1_stick {
         font-size: 38px;
         line-height: 37px;
     }
-    .p_stick2{
+    .p_stick2 {
         font-size: 14px;
         line-height: 20px;
     }
-    .stick_Button{
+    .stick_Button {
         width: 160px;
         height: 48px;
     }
-    .stick{
+    .stick {
         margin-top: 0;
         margin-left: 30px;
         padding-right: 15px;
         padding-left: 15px;
     }
-    .banner{
+    .banner {
         height: 530px;
     }
-    .dining_Img{
+    .dining_Img {
         width: 135px;
         height: 180px;
     }
-    .bedromm_Img{
+    .bedromm_Img {
         width: 135px;
         height: 180px;
     }
-    .living_Img{
+    .living_Img {
         width: 135px;
         height: 180px;
     }
-    .p_Dining, .p_Living, .p_Bedroom{
+    .p_Dining,
+    .p_Living,
+    .p_Bedroom {
         font-size: 14px;
     }
-    .h2_Browse{
+    .h2_Browse {
         font-size: 22px;
     }
-    .p_Browse{
+    .p_Browse {
         font-size: 17px;
         padding-left: 5px;
     }
-    
-    .h3_Share{
+
+    .h3_Share {
         font-size: 31px;
         padding-bottom: 30px;
-    }    
-    .row1_Products{
+    }
+    .row1_Products {
         flex-wrap: wrap;
         width: 100%;
     }
-    .row2_Products{
+    .row2_Products {
         flex-wrap: wrap;
         width: 100%;
     }
-    .syltherine_Img,.leviosa_Img,.lolito_Img,.respira_Img, .zephyr_Img, .astra_Img, .pinkgy_Img, .potty_Img{
+    .syltherine_Img,
+    .leviosa_Img,
+    .lolito_Img,
+    .respira_Img,
+    .zephyr_Img,
+    .astra_Img,
+    .pinkgy_Img,
+    .potty_Img {
         width: 100%;
         height: 200px;
         object-fit: cover;
     }
-.name_Product{
-    font-size: 18px;
+    .name_Product {
+        font-size: 18px;
+    }
+    .product1_Description,
+    .product2_Description,
+    .product3_Description,
+    .product4_Description {
+        font-size: 14px;
+    }
+    .price_Product {
+        font-size: 16px;
+    }
+    .details_Product {
+        width: 100%;
+        font-size: 14px;
+    }
+    .slytherine_Product,
+    .leviosa_Product,
+    .lolito_Product,
+    .respira_Product,
+    .zephyr_Product,
+    .astra_Product,
+    .pinkgy_Product,
+    .potty_Product,
+    .velloria_Product,
+    .lunara_Product,
+    .tessera_Product,
+    .nyvora_Product,
+    .aqualis_Product,
+    .orlina_Product,
+    .mirella_Product,
+    .elira_Product {
+        width: 45%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .h2_Our {
+        font-size: 31px;
+    }
+    .share {
+        width: 100%;
+    }
+    .share_img {
+        width: 100%;
+    }
+    .test {
+        padding-right: 0;
+        margin-right: 0;
+        padding-left: 0;
+    }
 }
-.product1_Description, .product2_Description, .product3_Description, .product4_Description{
-    font-size: 14px;
-}
-.price_Product{
-    font-size: 16px;
-}
-.details_Product{
-    width:  100%;
-    font-size: 14px;
-}
-.slytherine_Product,.leviosa_Product,.lolito_Product,.respira_Product,.zephyr_Product,.astra_Product,.pinkgy_Product,.potty_Product,.velloria_Product,.lunara_Product,.tessera_Product,.nyvora_Product,.aqualis_Product,.orlina_Product,.mirella_Product,.elira_Product{
-    width: 45%;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 20px;
-    
-}
-.h2_Our{
-    font-size: 31px;
-  
-}
-.share{
-    width: 100%;
-}
-.share_img{
-    width: 100%;
-}
-.test{
-    padding-right: 0;
-    margin-right: 0;
-    padding-left: 0;
-}
-  }

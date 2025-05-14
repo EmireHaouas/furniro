@@ -108,7 +108,6 @@ This project demonstrates :
 
 ---
 
----
 
 ## ⚠ Note on Render Backend (Cold Start)
 
@@ -118,5 +117,6 @@ The **backend API is deployed on Render free plan**, which means:
 - This is expected behavior of Render free instances and is not a bug.
 - For production-grade projects, upgrading to a paid plan ensures always-on performance.
 
+---
 ---
 

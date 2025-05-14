@@ -4,6 +4,12 @@
 It features a fully functional shopping cart system, allowing users to browse products, manage quantities, and experience a checkout flow enhanced with **Stripe secure payments integration.**
 
 ---
+## 📸 Screenshots
+
+| Homepage (Desktop)  | Secure Stripe Payment (Test Mode)  |
+|----------------------|------------------------------|
+| ![Homepage Screenshot](https://raw.githubusercontent.com/EmireHaouas/furniro/refs/heads/main/furniro/src/assets/imgs/furniroPreview.jpg) | ![Payment Screenshot](https://raw.githubusercontent.com/EmireHaouas/furniro/refs/heads/main/furniro/src/assets/imgs/furniroPreviewPayment.png) |
+
 🔗 [Live Demo](https://emire-haouas.dev/furniro/)
 
 ## 📱 Fully Responsive – Mobile to Desktop
@@ -102,6 +108,15 @@ This project demonstrates :
 
 ---
 
-## 🗺️ Stripe Integration Diagram
+---
 
-![Stripe Integration Flow](./docs/stripe-flow-diagram.png)
+## ⚠ Note on Render Backend (Cold Start)
+
+The **backend API is deployed on Render free plan**, which means:
+- The server **goes to sleep after 15 minutes of inactivity**.
+- When waking up, **it may take up to 60 seconds to respond to the first request**.
+- This is expected behavior of Render free instances and is not a bug.
+- For production-grade projects, upgrading to a paid plan ensures always-on performance.
+
+---
+

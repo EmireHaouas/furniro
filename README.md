@@ -4,6 +4,7 @@
 It features a fully functional shopping cart system, allowing users to browse products, manage quantities, and experience a checkout flow enhanced with **Stripe secure payments integration.**
 
 ---
+🔗 [Live Demo](https://emire-haouas.dev/furniro/)
 
 ## 📱 Fully Responsive – Mobile to Desktop
 
@@ -88,12 +89,6 @@ ZIP: any 5 digits
 
 ---
 
-## 🎯 Live Demo
-
-- **Frontend (Infomaniak / Netlify / Vercel...)**
-- **Backend API (Render.com):** https://furniro-ng8e.onrender.com
-
----
 
 ## 💡 For Recruiters
 

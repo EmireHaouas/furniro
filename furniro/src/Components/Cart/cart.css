@@ -78,6 +78,9 @@
   cursor: pointer;
   font-size: 20px;
   text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  width: 0;
 }
 
 .items_Cart {

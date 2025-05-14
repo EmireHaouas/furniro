@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Checkout.css";
 import bannercheckout from "../../assets/imgs/bannercheckout.webp";
 import Warranty from "../Global/Warranty";
@@ -7,6 +7,7 @@ import Countries from "../../Data/Countries";
 import { useNavigate } from "react-router-dom";
 
 const Checkout = () => {
+  const [formError, setFormError] = useState(false);
   const { cart } = useCart();
   const navigate = useNavigate();
 
@@ -43,12 +44,15 @@ const Checkout = () => {
     if (isFormValid) {
       navigate("/payment");
     } else {
-      alert("Please fill all required fields.");
+      setFormError(true);
     }
   };
 
   return (
       <div className="checkout_Container">
+        {formError && (
+            <p className="error-message">Please fill all required fields.</p>
+        )}
         <img
             src={bannercheckout}
             alt="bannercheckout"
